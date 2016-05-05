@@ -11,15 +11,4 @@ more about it on
 site <http://www.tomgurion.me/sign-language.html>`__. I just uploaded a
 video demo of the project. Feel free to comment.
 
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
-
+.. youtube:: x6i9gXS5VEQ

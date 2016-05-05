@@ -32,6 +32,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+PLUGINS = ['pelican_youtube']
+
 MEDIUS_CATEGORIES = {
     'Projects': {
         'description': "it's showtime!",
