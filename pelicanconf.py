@@ -56,6 +56,8 @@ MEDIUS_AUTHORS = {
     }
 }
 
+MEDIUS_WIDGETS = ['authors', 'categories', 'tags']
+
 DISPLAY_CATEGORIES_ON_MENU = False
 
 # Uncomment following line if you want document-relative URLs when developing
