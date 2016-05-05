@@ -1,0 +1,30 @@
+Publication in the proceedings of HCI International 2013
+########################################################
+:date: 2015-05-23 21:06
+:author: Tom Gurion
+:tags: HCI International 2013, MA thesis
+:slug: publication-in-the-proceedings-of-hci-international-2013
+
+.. raw:: html
+
+   <div class="separator" style="clear: both; text-align: center;">
+
+|image0|
+
+.. raw:: html
+
+   </div>
+
+`Gurion, Tom, and Nori Jacoby. "Audio-Only Augmented Reality System
+for Social Interaction." HCI International 2013-Posters’ Extended
+Abstracts. Springer Berlin Heidelberg, 2013.
+322-326. <http://db.tt/zpgwMFKJ>`__
+Here's the `paper page at
+SpringerLink <http://link.springer.com/content/pdf/10.1007%2F978-3-642-39473-7_65.pdf>`__
+
+.. raw:: html
+
+   </p>
+
+.. |image0| image:: http://www.ainci.com/hci-international-2013/HCI%20Lab%20%202013%20-%20HCI%20International%20-%20Las%20Vegas%20-%20USA.jpg
+   :target: http://www.ainci.com/hci-international-2013/HCI%20Lab%20%202013%20-%20HCI%20International%20-%20Las%20Vegas%20-%20USA.jpg
