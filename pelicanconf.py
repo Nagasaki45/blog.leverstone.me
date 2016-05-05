@@ -34,9 +34,11 @@ DEFAULT_PAGINATION = 10
 
 MEDIUS_CATEGORIES = {
     'Projects': {
+        'description': "it's showtime!",
         'thumbnail': '/images/thumb_projects.jpg',
     },
     'Thoughts': {
+        'description': 'ideas and experimentations',
         'thumbnail': '/images/thumb_thoughts.png',
     },
     'Other': {
