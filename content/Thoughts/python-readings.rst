@@ -1,6 +1,6 @@
 Python readings
 ###############
-:date: 2014-11-19 09:26
+:date: 2014-11-17
 :author: Tom Gurion
 :tags: books, python
 :slug: python-readings
@@ -22,7 +22,7 @@ Hence, here is my thoughts about the books that helped, and still
 helping me learning python.
 
 Disclaimers
-^^^^^^^^^^^
+-----------
 
 - I'm new to python and the world of programming.
 - Books won't do the work for everybody.
@@ -35,15 +35,14 @@ they won't help you learn python 2 also, but you will have to find the
 differences by yourself.
 
 Beginners books
-~~~~~~~~~~~~~~~
-
-
+---------------
 
 `The Quick Python Book, Second Edition (Naomi R. Ceder) <http://www.amazon.com/Quick-Python-Book-Second-Edition/dp/193518220X>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+|image0|
 
-|image0|\ After trying different books for python (Think Python, Dive
+After trying different books for python (Think Python, Dive
 into Python 3 and Head First Python) I've found this one to be the
 preferable as a learning book for someone that already saw some code,
 but is definitely not an experienced programmer.
@@ -63,15 +62,14 @@ Summary: For part 2 I will give 5 start without hesitations. But part
 very recommended.
 
 More advance / intermediate books
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+---------------------------------
 
 `Python in Practice (Mark Summerfield) <http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636/ref=sr_1_1?s=books&ie=UTF8&qid=1416060956&sr=1-1&keywords=python+in+practice>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+|image1|
 
-|image1|\ I bought this book primary for its chapters about design
+I bought this book primary for its chapters about design
 patterns as well as the concurrency and the networking chapters (1 to 3,
 4 and 6 accordingly). The book doesn't meant to be read from start to
 finish, but as a reference and guide to each topic separately. I think
@@ -107,17 +105,7 @@ Summary:The high-level concurrency chapter is really great and deserve
 `The Python Cookbook, 3rd edition (David Beasley) <http://www.amazon.com/Python-Cookbook-David-Beazley/dp/1449340377/ref=sr_1_1?s=books&ie=UTF8&qid=1416061017&sr=1-1&keywords=the+python+cookbook>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
 |image2|
-
-.. raw:: html
-
-   </div>
 
 After disappointing from "Python in Practice" I've came across this
 book as one with similar scope, namely, a design patterns book,
@@ -137,9 +125,7 @@ Summary: Assuming you already know python (don't read it if you don't)
 I think that this book is a must have. 5 stars are barely enough.
 
 Scientific computing with python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+--------------------------------
 As already noted, I've never thought that I will find myslef
 programming python in a full time job. Essentially, I've decided to
 learn python as a data analysis tool for my `MA
@@ -149,17 +135,7 @@ are the main sources I've used to get the necessary knowledge.
 `Python for Data Analysis (Wes McKinney) <http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
 |image3|
-
-.. raw:: html
-
-   </div>
 
 It's not a bad book but if you are looking for a good book for
 scientific computing with python you will probably be disappointed.
@@ -185,8 +161,6 @@ are a beginner or not.
 
 `Python Scientific Lecture Notes <https://scipy-lectures.github.io/>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
 I have to admit, I've read only the first section of the "lecture
 notes", but if you are looking for an introduction to scientific
 computing with python this "book" is definitely worth reading. It covers
@@ -194,15 +168,14 @@ the basics of numpy, matplotlib and scipy very concisely, with lots of
 short but working code examples.
 
 Web development with python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
+---------------------------
 
 `Two Scoops of Django: Best Practices for Django 1.6 (Daniel Greenfeld - AKA pydanny, and his wife Audrey Roy) <http://www.amazon.com/Two-Scoops-Django-Best-Practices/dp/098146730X>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+|image4|
 
-|image4|\ Can't say I've finish reading this book. It more like a
+Can't say I've finish reading this book. It more like a
 reference you open anytime you need for some extra help on each topic,
 with emphasis on best practices.
 Be aware that this book is not for beginners! But if you want to
@@ -226,17 +199,7 @@ copy, you won't regret it!
 `TDD with python (Harry J. W. Percival) <http://www.amazon.com/Test-Driven-Development-Python-Harry-Percival/dp/1449364829>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
 |image5|
-
-.. raw:: html
-
-   </div>
 
 I've started to read this book only recently, so I'm still in the
 middle of it (somewhere around chapter 17). So my very warm
@@ -264,27 +227,21 @@ development. Very recommended. And you can even read it online for free
 `here <http://chimera.labs.oreilly.com/books/1234000000754/>`__.
 
 Ending words
-~~~~~~~~~~~~
-
-
+------------
 I would really like to hear your thoughts about the recommendations,
 whether you agree with me and even more if not :-).
 You are also welcome to contact me on any question about these books /
 other python resources and I will do my best to answer.
 
-.. raw:: html
-
-   </p>
-
 .. |image0| image:: http://ecx.images-amazon.com/images/I/51afqHmFrML._SX258_BO1,204,203,200_.jpg
-   :target: http://ecx.images-amazon.com/images/I/51afqHmFrML._SX258_BO1,204,203,200_.jpg
+   :width: 180px
 .. |image1| image:: http://www.qtrac.eu/pipbookm.png
-   :target: http://www.qtrac.eu/pipbookm.png
+   :width: 180px
 .. |image2| image:: http://ecx.images-amazon.com/images/I/51zDEWm5kcL._SX258_BO1,204,203,200_.jpg
-   :target: http://ecx.images-amazon.com/images/I/51zDEWm5kcL._SX258_BO1,204,203,200_.jpg
+   :width: 180px
 .. |image3| image:: https://d.gr-assets.com/books/1356132971l/14744694.jpg
-   :target: https://d.gr-assets.com/books/1356132971l/14744694.jpg
+   :width: 180px
 .. |image4| image:: http://www.arruda.blog.br/wp-content/uploads/2014/03/IMG_1894.jpg
-   :target: http://www.arruda.blog.br/wp-content/uploads/2014/03/IMG_1894.jpg
+   :width: 180px
 .. |image5| image:: http://orm-other.s3.amazonaws.com/tddwithpython/final_cover.jpg
-   :target: http://orm-other.s3.amazonaws.com/tddwithpython/final_cover.jpg
+   :width: 180px

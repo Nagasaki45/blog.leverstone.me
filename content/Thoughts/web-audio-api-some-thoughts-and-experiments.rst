@@ -1,6 +1,6 @@
 Web Audio API - some thoughts and experiments
 #############################################
-:date: 2015-12-17 12:47
+:date: 2014-02-14
 :author: Tom Gurion
 :tags: javascript, python, tornado, web, web audio API
 :slug: web-audio-api-some-thoughts-and-experiments
@@ -38,13 +38,11 @@ usage because of the next reasons:
 
 .. raw:: html
 
-   <div>
-
-.. raw:: html
-
    <div class="separator" style="clear: both; text-align: center;">
 
-|image0|
+.. image:: /images/web_audio_screenshot.png
+  :target: http://web-audio.nagasaki45.com/
+  :alt: Web-audio experiment screenshot
 
 .. raw:: html
 
@@ -55,14 +53,3 @@ experiment with the API. If you are interesting in more information and
 tutorials be sure to take a look at the "Useful links" menu (top
 navigation bar). And as always, source code can be found at
 `github <https://github.com/Nagasaki45/Web-Audio>`__.
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: http://2.bp.blogspot.com/-KZi_5wGhqSs/Uv5p85iWcwI/AAAAAAAAOPQ/-AmGHb1TnEc/s1600/web-audio+screen.png
-   :target: http://web-audio.herokuapp.com/

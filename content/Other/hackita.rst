@@ -1,19 +1,9 @@
 "Hackita"
 #########
-:date: 2013-12-08 13:56
+:date: 2013-12-07
 :author: Tom Gurion
 :tags: django, python, web
 :slug: hackita
-
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
-|image0|
-
-.. raw:: html
-
-   </div>
 
 In the last few weeks I was participating in the first session of
 "`Hackita <https://hackita.hasadna.org.il/>`__\ ", which means "The
@@ -38,10 +28,3 @@ Meanwhile, here are two of my "homework" exercises:
    `github <https://github.com/Nagasaki45/Friends-Mapper>`__.
 
 Information regarding my final project will come soon...
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: http://1.bp.blogspot.com/-ZsBq-lywZLs/UqNowPmYEKI/AAAAAAAANss/ZXb3LVIp0sY/s200/Friends-Mapper+screenshot.png
-   :target: http://friends-mapper.herokuapp.com/

@@ -1,6 +1,6 @@
 ScenePlayer Plus
 ################
-:date: 2013-07-02 02:52
+:date: 2013-06-24
 :author: Tom Gurion
 :tags: augmented reality, MA thesis, ScenePlayer Plus
 :slug: sceneplayer-plus
@@ -9,7 +9,8 @@ ScenePlayer Plus
 
    <div class="separator" style="clear: both; text-align: center;">
 
-|image0|
+.. image:: /images/sceneplayerplus_logo.png
+  :alt: ScenePlayer Plus logo
 
 .. raw:: html
 
@@ -37,10 +38,3 @@ positioning.
 Developers that interested in improving the Bluetooth awareness
 capabilities of the app or in adding more features (GPS / compass /
 social media APIs etc.) are welcome to contact me.
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: http://4.bp.blogspot.com/-h7G7npbJIUs/Ucjm9gAhSwI/AAAAAAAAKa4/Mg6NmQN5pdw/s1600/sceneplayerplus.png
-   :target: http://4.bp.blogspot.com/-h7G7npbJIUs/Ucjm9gAhSwI/AAAAAAAAKa4/Mg6NmQN5pdw/s1600/sceneplayerplus.png

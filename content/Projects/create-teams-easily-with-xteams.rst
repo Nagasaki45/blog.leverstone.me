@@ -1,11 +1,15 @@
 Create teams easily with Xteams!
 ################################
-:date: 2015-05-22 20:40
+:date: 2014-09-19
 :author: Tom Gurion
 :tags: django, python, web
 :slug: create-teams-easily-with-xteams
 
-|image0|\ I've been playing volleyball recently with a group of
+.. image:: /images/xteams.jpg
+  :width: 100%
+  :alt: Playing volleyball
+
+I've been playing volleyball recently with a group of
 amateur players. In the last two months the size of our group has
 increased so much that it became very hard to create teams. And if you
 think that size is the only issue I can assure you that there are many
@@ -17,19 +21,10 @@ insulting a not-so-good player by choosing him last.
 - Maybe you have too many players around for one game, but just enough
 for a tournament of 4 teams.
 In order to solve these inconveniences I've created
-`Xteams! <http://xteams.herokuapp.com/>`__ a web-app with one goal in
+`Xteams! <http://xteams.nagasaki45.com/>`__ a web-app with one goal in
 mind:
 
-.. raw:: html
-
-   <div style="text-align: center;">
-
-***Create teams automatically based on discrete scores of the players***
-
-.. raw:: html
-
-   </div>
-
+**Create teams automatically based on discrete scores of the players**
 
 Using Xteams, group managers can give scores to players in the
 management panel. Players of the group can't access this panel but can
@@ -43,7 +38,6 @@ allocations and choosing the best of them.
 
 For devs
 ^^^^^^^^
-
 The app is still under development (aren't they all?), and many more
 modifications, improvements and features are considered. Any help in the
 development process is more than welcome (`github
@@ -51,13 +45,5 @@ repo <https://github.com/Nagasaki45/Xteams>`__).
 
 Thanks
 ^^^^^^
-
 To the players of Nahlaot Veshut volleyball team, who consistently help
 with new ideas for features and additional improvements.
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: http://4.bp.blogspot.com/-8SH4bkEX0_0/VBcgI0EiKtI/AAAAAAAAQBg/lsCvWbhdkn4/s1600/volley_edit.jpg
-   :target: http://4.bp.blogspot.com/-8SH4bkEX0_0/VBcgI0EiKtI/AAAAAAAAQBg/lsCvWbhdkn4/s1600/volley_edit.jpg

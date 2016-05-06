@@ -1,6 +1,6 @@
 Poor man's trick to add and remove conda from $PATH
 ###################################################
-:date: 2015-11-03 18:17
+:date: 2015-10-24
 :author: Tom Gurion
 :tags: bash, conda, pip, python
 :slug: poor-mans-trick-to-add-and-remove-conda-from-path
@@ -17,28 +17,24 @@ installation). There are some
 but AFAIK there is no official solution for the problem.
 Here is my solution to keep the system-wide python installation as my
 default environment and start to use conda only when I want to:
-~/bin/unconda
-export PATH=\`echo ":${PATH}:" \| sed -e
-"s:\\:$HOME/miniconda3/bin\\::\\::g" -e "s/^://" -e "s/:$//"\`
+
+.. code:: bash
+
+  $ cat ~/bin/unconda
+  export PATH=`echo ":${PATH}:" | sed -e "s:\:$HOME/miniconda3/bin\::\::g" -e "s/^://" -e "s/:$//"`
+
 Got the trick from
 `here <https://ntk.me/2013/05/04/path-environment-variable/>`__. Thanks
 Natsuki!
-~/bin/reconda
-export PATH="$HOME/miniconda3/bin:$PATH"
-Now justadd $HOME/bin to your path if it's not already there and you
+
+.. code:: bash
+
+  $ cat ~/bin/reconda
+  export PATH="$HOME/miniconda3/bin:$PATH"
+
+Now just add ``$HOME/bin`` to your path if it's not already there and you
 are ready to go.
-Don't forget to remove the line in your .bashrc that add miniconda to
+Don't forget to remove the line in your ``.bashrc`` that add miniconda to
 the path in the first place.
 
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </p>
-
+.. youtube:: UdQgJdnrEDw

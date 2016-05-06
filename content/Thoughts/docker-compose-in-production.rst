@@ -1,6 +1,6 @@
 docker-compose in production
 ############################
-:date: 2016-03-01 18:49
+:date: 2016-02-29
 :author: Tom Gurion
 :tags: django, docker, python, web
 :slug: docker-compose-in-production
@@ -32,8 +32,6 @@ deployment requirements:
 #. Keep deployment scripts to the bare minimum.
 #. Not over-engineer the issue.
 
-
-
 `Dokku <http://dokku.viewdocs.io/dokku/>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -64,9 +62,8 @@ be answered.
 
 Finally: docker and docker-compose to the rescue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-|image1|
-docker-compose containers in production
+.. image:: images/docker_compose_prod.jpg
+  :alt: Docker compose in production
 
 You weren't expected this, didn't you?!?
 Let's follow the diagram and I will try to convince you why using
@@ -97,7 +94,6 @@ Here's the Dockerfile for this image:
 
    <script src="https://gist.github.com/Nagasaki45/58bd4d758c1408d2c4b7.js"></script>
 
-
 Above the web container there is the Nginx container, which have
 access to a shared volume from the web container that contains all of
 the static files, so static files are served by Nginx directly. Here is
@@ -106,7 +102,6 @@ the Nginx container configuration file:
 .. raw:: html
 
    <script src="https://gist.github.com/Nagasaki45/1830411bc5e510c096ae.js"></script>
-
 
 Outside of the docker orchestration there is one more Nginx instance,
 its job is to route each incoming request to the correct app on the
@@ -118,20 +113,17 @@ configuration file:
 
    <script src="https://gist.github.com/Nagasaki45/4575b34641bc4e804c09.js"></script>
 
-
 Here's how my docker-compose configuration file looks like:
 
 .. raw:: html
 
    <script src="https://gist.github.com/Nagasaki45/15f22aeb60e49d1c30d3.js"></script>
 
-
 Building and running these containers is really simple:
 
 .. raw:: html
 
    <script src="https://gist.github.com/Nagasaki45/9aed10b837612f385bc7.js"></script>
-
 
 So now, let's try to tackle the requirements list again:
 
@@ -161,11 +153,8 @@ So now, let's try to tackle the requirements list again:
    maintaining ansible deployment scripts, especially when there are
    several different apps on the same server.
 
-
-
 Cons
 ^^^^
-
 -  Provisioning, although very simple, is done manually: I create a
    folder on the server, clone the project, and add the django "secrets"
    file. It can be automated too, of course, but I'm not sure I see a
@@ -183,11 +172,8 @@ Cons
    volume with the latest collected static files. It's a hack I don't
    like, but I live with it.
 
-
-
 Summary
 ^^^^^^^
-
 I really like docker-compose. At first, it looks like a tool with a
 steep learning curve. But don't be too intimidated. Give it a try and
 you might find an elegant solution for deployments, which will hopefully
@@ -196,12 +182,3 @@ I'm sure that there are lots of approaches I'm not covering here, and
 all of the above only reflects my limited experience in the field.
 Therefor, feel free to criticize and share your experience about the
 subject!
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: https://1.bp.blogspot.com/-dt54Ke0KkUs/VtNcYkHR58I/AAAAAAAAWfQ/TUI5K1JVr40/s640/docker-compose-prod.jpg
-   :target: https://1.bp.blogspot.com/-dt54Ke0KkUs/VtNcYkHR58I/AAAAAAAAWfQ/TUI5K1JVr40/s1600/docker-compose-prod.jpg
-.. |image1| image:: https://1.bp.blogspot.com/-dt54Ke0KkUs/VtNcYkHR58I/AAAAAAAAWfQ/TUI5K1JVr40/s640/docker-compose-prod.jpg
-   :target: https://1.bp.blogspot.com/-dt54Ke0KkUs/VtNcYkHR58I/AAAAAAAAWfQ/TUI5K1JVr40/s1600/docker-compose-prod.jpg

@@ -1,6 +1,6 @@
 MusiGali - EEG controlled music for Brain Tech Israel 2013
 ##########################################################
-:date: 2013-10-17 20:40
+:date: 2013-10-14
 :author: Tom Gurion
 :tags: Brain Tech Israel 2013, Live
 :slug: musigali-eeg-controlled-music-for-brain-tech-israel-2013
@@ -23,35 +23,10 @@ the data from the headset.
 Many thanks to Zvika Markfeld and Saron Paz from `ForReal
 Team <http://forrealteam.com/>`__, the exhibition curators.
 
-.. raw:: html
+.. image:: /images/musigali_presentation1.jpg
+  :width: 100%
+  :alt: MusiGali project presentation at Brain Tech Israel 2013
 
-   <div class="separator" style="clear: both; text-align: center;">
-
-|image0|
-
-.. raw:: html
-
-   </div>
-
-
-
-.. raw:: html
-
-   <div class="separator" style="clear: both; text-align: center;">
-
-|image1|
-
-.. raw:: html
-
-   </div>
-
-
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: http://2.bp.blogspot.com/-iUdZlPybwPA/UlxKLvL4vfI/AAAAAAAAM6M/AqYlraBuy7k/s640/20131014_115421.jpg
-   :target: http://2.bp.blogspot.com/-iUdZlPybwPA/UlxKLvL4vfI/AAAAAAAAM6M/AqYlraBuy7k/s1600/20131014_115421.jpg
-.. |image1| image:: http://4.bp.blogspot.com/-zBmwy8Oo06E/UmBJVkj75mI/AAAAAAAAM90/cEc8aQRTF1I/s640/IMG_2284.JPG
-   :target: http://4.bp.blogspot.com/-zBmwy8Oo06E/UmBJVkj75mI/AAAAAAAAM90/cEc8aQRTF1I/s1600/IMG_2284.JPG
+.. image:: /images/musigali_presentation2.jpg
+  :width: 100%
+  :alt: MusiGali project presentation at Brain Tech Israel 2013

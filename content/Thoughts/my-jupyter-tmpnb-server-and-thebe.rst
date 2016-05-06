@@ -1,37 +1,30 @@
 My Jupyter (tmpnb) server and Thebe
 ###################################
-:date: 2015-09-20 19:42
+:date: 2015-08-04
 :author: Tom Gurion
 :tags: data analysis, jupyter, python, scientific computing, web
 :slug: my-jupyter-tmpnb-server-and-thebe
 
-.. raw:: html
+**Notice: code execution in the browser is currently broken**
 
-   <p>
+.. code:: python
 
-.. raw:: html
+  %matplotlib inline
+  import matplotlib.pyplot as plt
+  import numpy as np
+  from IPython.html.widgets import interact
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  def plot_sine(frequency=1.0, amplitude=1.0):
+      plt.ylim(-1.0, 1.0)
+      x = np.linspace(0, 10, 1000)
+      plt.plot(x, amplitude*np.sin(x*frequency))
 
-.. raw:: html
-
-   <script charset="utf-8" src="https://rawgit.com/oreillymedia/thebe/master/static/main-built.js" type="text/javascript"></script>
-
-.. raw:: html
-
-   <script>    $(function(){         new Thebe({             url: "https://oreillyorchard.com:8000/",             debug: true         });     }); </script>
-
-
-
-::
-
-    %matplotlib inlineimport matplotlib.pyplot as pltimport numpy as npfrom IPython.html.widgets import interactdef plot_sine(frequency=1.0, amplitude=1.0):    plt.ylim(-1.0, 1.0);    x = np.linspace(0, 10, 1000)    plt.plot(x, amplitude*np.sin(x*frequency));interact(plot_sine, frequency=(0.5, 10.0), amplitude=(0.0, 1.0));
-
+  interact(plot_sine, frequency=(0.5, 10.0), amplitude=(0.0, 1.0));
 
 Isn't that amazing?!?
 I've recently installed an
 `tmpnb <https://github.com/jupyter/tmpnb>`__ sever on my digitalocean
-server, you can access it at nagasaki45.com:8000.
+server, you can access it at ``nagasaki45.com:8000``.
 So, what's the big deal?
 This configuration allow anyone to use python (or one of the other
 supported / installed kernels) on the web, using my server. You don't
@@ -49,15 +42,13 @@ And it goes way beyond:
 
 So go ahead, write some code, let me execute it for you ;-)
 
-::
-
-    # your python playground 
-
-
+Edit 6.5.16:
+~~~~~~~~~~~~
+Oreilly shut down their tmpnb server too :-(
+So this blog post won't execute python code anytime soon.
 
 Edit 1.9.15:
 ~~~~~~~~~~~~
-
 My digitalocean VM has "only" 512MB of RAM. I decided to span tmpnb
 with 4 docker containers, 50MB RAM each, to keep the server load on
 minimum. Apparently, it possessed some issues as 50MB are probably not
@@ -70,11 +61,5 @@ there are no kernal failures when running the examples.
 
 Edit 20.9.15:
 ~~~~~~~~~~~~~
-
 I'm stopping the service on my server due to some number crunching tasks
 I'm running on it.
-
-.. raw:: html
-
-   </p>
-

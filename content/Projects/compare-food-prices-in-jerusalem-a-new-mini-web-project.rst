@@ -1,6 +1,6 @@
 Compare food prices in Jerusalem - a new mini-web-project
 #########################################################
-:date: 2013-12-07 19:58
+:date: 2013-11-16
 :author: Tom Gurion
 :tags: django, python, web
 :slug: compare-food-prices-in-jerusalem-a-new-mini-web-project
@@ -9,7 +9,8 @@ Compare food prices in Jerusalem - a new mini-web-project
 
    <div class="separator" style="clear: both; text-align: center;">
 
-|image0|
+.. image:: /images/jerusalem_marketprices.png
+  :target: http://nagasaki45.pythonanywhere.com/
 
 .. raw:: html
 
@@ -35,10 +36,3 @@ able to update markets, products and prices, drop a comment and I will
 create an account for you.
 And as always, source code can be found at
 `github <https://github.com/Nagasaki45/MarketPrices>`__.
-
-.. raw:: html
-
-   </p>
-
-.. |image0| image:: http://4.bp.blogspot.com/-_Eu5pw3oY0k/UofoDr5dUOI/AAAAAAAANeE/Mt27HA5GFcE/s200/MarketPrices.png
-   :target: http://nagasaki45.pythonanywhere.com/
