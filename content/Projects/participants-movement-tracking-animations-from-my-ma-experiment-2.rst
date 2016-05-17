@@ -33,4 +33,4 @@ between the participants and the system components.
 The analysis repository can be found `at
 github <https://github.com/Nagasaki45/MA-experiment-analysis>`__.
 Additional information about the research can be found
-`here <http://tomgurion.blogspot.com/p/master-thesis.html>`__.
+`here <http://www.tomgurion.me/an-audio-only-augmented-reality-system-for-social-interaction.html>`__.

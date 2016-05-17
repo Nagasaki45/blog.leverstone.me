@@ -15,5 +15,5 @@ In this slideshow you can taste a little bit of how the system and the
 experiment looks like. This slideshow originally made for my
 presentation at `ISTAS'13 <http://istas13.org/>`__ (and it contains much
 better animations then what you can see here on the slideshare version
-:-) ), but I would be happy to present it again, just `contact
-me <http://tomgurion.blogspot.ca/p/contact.html>`__.
+:-) ), but I would be happy to present it again, just contact
+me.
