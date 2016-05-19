@@ -2,7 +2,7 @@ Publication in the proceedings of HCI International 2013
 ########################################################
 :date: 2013-06-23
 :author: Tom Gurion
-:tags: HCI International 2013, MA thesis
+:tags: conference, MA thesis, publication
 :slug: publication-in-the-proceedings-of-hci-international-2013
 
 .. raw:: html

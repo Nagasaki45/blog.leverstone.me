@@ -2,7 +2,7 @@ Web Audio API - some thoughts and experiments
 #############################################
 :date: 2014-02-14
 :author: Tom Gurion
-:tags: javascript, python, tornado, web, web audio API
+:tags: web, music programming
 :slug: web-audio-api-some-thoughts-and-experiments
 
 For me, being able to use advance audio programming on the web looks

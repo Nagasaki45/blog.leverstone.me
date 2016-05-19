@@ -2,7 +2,7 @@ Poor man's trick to add and remove conda from $PATH
 ###################################################
 :date: 2015-10-24
 :author: Tom Gurion
-:tags: bash, conda, pip, python
+:tags: python, tools
 :slug: poor-mans-trick-to-add-and-remove-conda-from-path
 
 `Conda <http://conda.pydata.org/docs/>`__ is great for managing

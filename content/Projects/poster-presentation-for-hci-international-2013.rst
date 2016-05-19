@@ -2,7 +2,7 @@ Poster presentation for HCI International 2013
 ##############################################
 :date: 2013-07-17
 :author: Tom Gurion
-:tags: HCI International 2013, MA thesis
+:tags: conference, MA thesis
 :slug: poster-presentation-for-hci-international-2013
 
 Next week I'm going to present my master thesis in `HCI International

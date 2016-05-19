@@ -2,7 +2,7 @@ Writing a programming book? Don't compose an utility library!
 #############################################################
 :date: 2015-05-23
 :author: Tom Gurion
-:tags: books, data analysis, python, R, scientific computing
+:tags: books
 :slug: writing-a-programming-book-dont-compose-an-utility-library
 
 I came across two books recently, in which the authors decided to

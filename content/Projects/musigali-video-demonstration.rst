@@ -2,7 +2,7 @@ MusiGali video demonstration
 ############################
 :date: 2013-10-19 19:35
 :author: Tom Gurion
-:tags: Brain Tech Israel 2013, Live
+:tags: demo, music programming
 :slug: musigali-video-demonstration
 
 .. youtube:: aXbvVGCQ5wY

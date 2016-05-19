@@ -2,7 +2,7 @@ Some pictures from ISTAS'13
 ###########################
 :date: 2013-07-01
 :author: Tom Gurion
-:tags: ISTAS'13, MA thesis
+:tags: conference, MA thesis
 :slug: some-pictures-from-istas13
 
 Here are some pictures from the conference, which was great by the way.

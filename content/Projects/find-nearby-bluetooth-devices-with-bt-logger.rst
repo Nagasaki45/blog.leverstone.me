@@ -2,7 +2,7 @@ Find nearby Bluetooth devices with BT-logger
 ############################################
 :date: 2013-08-21
 :author: Tom Gurion
-:tags: BT logger, indoor positioning, MA thesis
+:tags: android, MA thesis
 :slug: find-nearby-bluetooth-devices-with-bt-logger
 
 With this new Android app you can get information about nearby

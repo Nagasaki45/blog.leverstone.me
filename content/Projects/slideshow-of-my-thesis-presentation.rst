@@ -2,7 +2,7 @@ Slideshow of my thesis presentation
 ###################################
 :date: 2013-06-28
 :author: Tom Gurion
-:tags: ISTAS'13, MA thesis
+:tags: conference, MA thesis
 :slug: slideshow-of-my-thesis-presentation
 
 .. raw:: html

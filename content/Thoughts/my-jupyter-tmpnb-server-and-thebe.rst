@@ -2,7 +2,7 @@ My Jupyter (tmpnb) server and Thebe
 ###################################
 :date: 2015-08-04
 :author: Tom Gurion
-:tags: data analysis, jupyter, python, scientific computing, web
+:tags: python, web, docker
 :slug: my-jupyter-tmpnb-server-and-thebe
 
 **Notice: code execution in the browser is currently broken**

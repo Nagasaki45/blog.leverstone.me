@@ -2,7 +2,7 @@ Video demo of my Sign-language project
 ######################################
 :date: 2016-03-04 22:50
 :author: Tom Gurion
-:tags: aiohttp, asyncio, LeapMotion, web, WekiMini, Wekinator
+:tags: demo, machine learning
 :slug: video-demo-of-my-sign-language-project
 
 This project convert sign-language / gestures to speech. You can read

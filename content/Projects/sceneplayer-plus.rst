@@ -2,7 +2,7 @@ ScenePlayer Plus
 ################
 :date: 2013-06-24
 :author: Tom Gurion
-:tags: augmented reality, MA thesis, ScenePlayer Plus
+:tags: android, MA thesis
 :slug: sceneplayer-plus
 
 .. raw:: html

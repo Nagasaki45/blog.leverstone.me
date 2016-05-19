@@ -2,7 +2,7 @@ MusiGali - EEG controlled music for Brain Tech Israel 2013
 ##########################################################
 :date: 2013-10-14
 :author: Tom Gurion
-:tags: Brain Tech Israel 2013, Live
+:tags: conference, music programming
 :slug: musigali-eeg-controlled-music-for-brain-tech-israel-2013
 
 A project by Giori Politi, Sharon Duek, Jonathan Abramson and myself

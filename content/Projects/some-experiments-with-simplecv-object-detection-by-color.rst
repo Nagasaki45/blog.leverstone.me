@@ -2,7 +2,7 @@ Some experiments with SimpleCV - object detection by color
 ##########################################################
 :date: 2014-04-06
 :author: Tom Gurion
-:tags: computer vision, python
+:tags: python, demo
 :slug: some-experiments-with-simplecv-object-detection-by-color
 
 Computer vision is way far from my daily interest. But last weekend I

@@ -2,7 +2,7 @@ Thesis project Pure Data patch video demonstration
 ##################################################
 :date: 2013-06-23
 :author: Tom Gurion
-:tags: MA thesis, Pure Data
+:tags: MA thesis, demo, music programming
 :slug: thesis-project-pure-data-patch-video-demonstration
 
 .. youtube:: 2kJoeD2iWBA

@@ -2,7 +2,7 @@ Abstract: Audio­-only augmented reality system for social interaction
 #####################################################################
 :date: 2013-06-23
 :author: Tom Gurion
-:tags: MA thesis, abstract
+:tags: MA thesis
 :slug: abstract-audio-only-augmented-reality-system-for-social-interaction
 
 Tom Gurion

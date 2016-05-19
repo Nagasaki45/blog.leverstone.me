@@ -2,7 +2,7 @@ Participants movement tracking animations from my MA experiment #2
 ##################################################################
 :date: 2014-10-27 19:22
 :author: Tom Gurion
-:tags: data analysis, MA thesis, movement tracking
+:tags: MA thesis
 :slug: participants-movement-tracking-animations-from-my-ma-experiment-2
 
 The following animated renditions are a byproduct of the video

@@ -2,7 +2,7 @@ ARpArty, the first ScenePlayer Plus Bluetooth aware scene, is here for you
 ##########################################################################
 :date: 2013-06-27
 :author: Tom Gurion
-:tags: augmented reality, MA thesis, ScenePlayer Plus
+:tags: MA thesis, android, music programming
 :slug: arparty-the-first-sceneplayer-plus-bluetooth-aware-scene-is-here-for-you
 
 You are welcome to download and install ARpArty scene for

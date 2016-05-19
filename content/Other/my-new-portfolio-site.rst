@@ -2,7 +2,7 @@ My new portfolio site
 #####################
 :date: 2016-02-04 17:06
 :author: Tom Gurion
-:tags: pelican
+:tags: web
 :slug: my-new-portfolio-site
 
 I have a new site!
