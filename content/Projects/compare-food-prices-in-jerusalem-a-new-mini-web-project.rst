@@ -11,6 +11,7 @@ Compare food prices in Jerusalem - a new mini-web-project
 
 .. image:: /images/jerusalem_marketprices.png
   :target: http://nagasaki45.pythonanywhere.com/
+  :alt: Project screenshot
 
 .. raw:: html
 
