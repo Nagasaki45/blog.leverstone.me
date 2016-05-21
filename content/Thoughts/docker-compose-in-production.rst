@@ -2,7 +2,7 @@ docker-compose in production
 ############################
 :date: 2016-02-29
 :author: Tom Gurion
-:tags: django, docker, python, web, tools
+:tags: django, docker, web, tools
 :slug: docker-compose-in-production
 
 Deployment sucks! I'm not a dev ops / sys admin type of person, and
