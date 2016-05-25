@@ -26,10 +26,6 @@ LINKS = (
     ('Python.org', 'http://python.org/'),
 )
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
 DEFAULT_PAGINATION = 9
 
 PLUGINS = ['pelican_youtube']
@@ -63,6 +59,3 @@ MEDIUS_AUTHORS = {
 MEDIUS_WIDGETS = ['authors', 'categories', 'tags']
 
 DISPLAY_CATEGORIES_ON_MENU = False
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
