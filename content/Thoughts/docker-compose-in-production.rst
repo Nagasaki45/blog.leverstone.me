@@ -62,7 +62,7 @@ be answered.
 
 Finally: docker and docker-compose to the rescue
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: images/docker_compose_prod.jpg
+.. image:: /images/docker_compose_prod.jpg
   :alt: Docker compose in production
 
 You weren't expected this, didn't you?!?
