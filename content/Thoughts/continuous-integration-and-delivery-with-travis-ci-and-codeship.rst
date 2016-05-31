@@ -56,7 +56,7 @@ ssh-key. Therefore, once you copied the public key to your server
 ``authorized_keys`` file, codeship can ssh / scp to it without
 additional effort, exactly as you do from your development environment.
 
-For example, I have a static sites that uses a simple script to generate
+For example, I have static sites that use a simple script to generate
 the site and upload it to the server using ``rsync``. From my
 development environment it looks like:
 
@@ -84,12 +84,13 @@ you deploy to, and can set the CI environment to be the same / very similar.
 Having said that, for everything else, just go with travis. You won't
 regret it.
 
-    TL;DR
+TL;DR
+-----
 
-    -  Prefer `travis-ci`_ when developing a library / command line
-       utility / non “deployable” software.
-    -  Use `codeship`_ for continuous deployment of web sites and
-       applications.
+-  Prefer `travis-ci`_ when developing a library / command line
+   utility / non “deployable” software.
+-  Use `codeship`_ for continuous deployment of web sites and
+   applications.
 
 .. _travis-ci: https://travis-ci.org/
 .. _codeship: https://codeship.com/
