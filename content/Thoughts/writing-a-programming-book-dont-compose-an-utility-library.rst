@@ -104,5 +104,5 @@ Edit:
 Don't miss Kruschke's comment below! He lights the above topics from
 different angle and supplies great arguments for his decisions.
 Maybe, as a programmer, I tend to rely on the language ecosystem mechamisms instead of being satisfied with the easier, and more beginners friendly solution Kruschke proposes.
-I defiantly agree with him that an easier-to-use software for data science, and bayesian data analysis in particular, is always welcomed.
-I would like to seize the opportunity to thank Kruschke again for his great book! I really enjoying reading it and I'm sure that I will continue to use the insights gained from it in the future.
+I definitely agree with him that an easier-to-use software for data science, and bayesian data analysis in particular, is always welcomed.
+I would like to seize the opportunity to thank Kruschke again for his great book! I really enjoy reading it and I'm sure that I will continue to use the insights gained from it in the future.
