@@ -28,7 +28,7 @@ LINKS = (
 
 DEFAULT_PAGINATION = 9
 
-PLUGINS = ['pelican_youtube']
+PLUGINS = ['pelican_youtube', 'readtime']
 
 MEDIUS_CATEGORIES = {
     'Projects': {
