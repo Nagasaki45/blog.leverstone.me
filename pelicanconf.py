@@ -52,7 +52,8 @@ MEDIUS_AUTHORS = {
         'image': '/images/TabaShips.jpg',
         'links': (('home', 'http://www.tomgurion.me/'),
                   ('github', 'https://github.com/Nagasaki45'),
-                  ('twitter', 'https://twitter.com/tom_gurion'))
+                  ('twitter', 'https://twitter.com/tom_gurion'),
+                  ('book', 'https://www.goodreads.com/Nagasaki45'))
     }
 }
 
