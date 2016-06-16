@@ -4,6 +4,11 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Tom Gurion'
 SITENAME = 'Music / Tech / Interaction'
+DESCRIPTION = """
+Let's talk about interactive music systems,
+experimentations with technology, new ideas,
+and things nobody cares about.
+""".strip()
 SITEURL = ''
 
 PATH = 'content'
@@ -57,6 +62,6 @@ MEDIUS_AUTHORS = {
     }
 }
 
-MEDIUS_WIDGETS = ['authors', 'categories', 'tags']
+MEDIUS_WIDGETS = ['description', 'authors', 'categories', 'tags']
 
 DISPLAY_CATEGORIES_ON_MENU = False
