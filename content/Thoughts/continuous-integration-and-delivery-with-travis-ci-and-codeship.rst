@@ -60,7 +60,7 @@ For example, I have static sites that use a simple script to generate
 the site and upload it to the server using ``rsync``. From my
 development environment it looks like:
 
-.. code:: bash
+.. code-block:: bash
 
     make rsync_upload
 

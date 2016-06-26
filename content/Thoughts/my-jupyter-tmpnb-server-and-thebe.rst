@@ -7,7 +7,7 @@ My Jupyter (tmpnb) server and Thebe
 
 **Notice: code execution in the browser is currently broken**
 
-.. code:: python
+.. code-block:: python
 
   %matplotlib inline
   import matplotlib.pyplot as plt

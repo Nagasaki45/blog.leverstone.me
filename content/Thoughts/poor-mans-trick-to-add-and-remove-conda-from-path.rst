@@ -18,7 +18,7 @@ but AFAIK there is no official solution for the problem.
 Here is my solution to keep the system-wide python installation as my
 default environment and start to use conda only when I want to:
 
-.. code:: bash
+.. code-block:: bash
 
   $ cat ~/bin/unconda
   export PATH=`echo ":${PATH}:" | sed -e "s:\:$HOME/miniconda3/bin\::\::g" -e "s/^://" -e "s/:$//"`
@@ -27,7 +27,7 @@ Got the trick from
 `here <https://ntk.me/2013/05/04/path-environment-variable/>`__. Thanks
 Natsuki!
 
-.. code:: bash
+.. code-block:: bash
 
   $ cat ~/bin/reconda
   export PATH="$HOME/miniconda3/bin:$PATH"

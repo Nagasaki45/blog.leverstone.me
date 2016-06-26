@@ -62,7 +62,7 @@ exception was lost due to a bug in the ``except`` block.
 If something is broken, I prefer it to raise exception as soon as possible. In
 python 2, the following won't fail!
 
-.. code:: python
+.. code-block:: python
 
     >>> # python2
     >>> 'hello' < 1
@@ -71,7 +71,7 @@ WTF?!? Why should anyone allow comparison between a string and an int!?!
 Moreover, what is the result, ``True`` or ``False``? In python 3 this issue was
 solved for good:
 
-.. code:: python
+.. code-block:: python
 
     >>> # python3
     >>> 'hello' < 1
@@ -87,7 +87,7 @@ List comprehensions that doesn't leak
 
 Again, another source for nasty bugs.
 
-.. code:: python
+.. code-block:: python
 
     >>> # python2
     >>> i = 42
@@ -95,7 +95,7 @@ Again, another source for nasty bugs.
     >>> print(i)
     9
 
-.. code:: python
+.. code-block:: python
 
     >>> # python3
     >>> i = 42
