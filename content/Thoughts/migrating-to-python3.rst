@@ -12,7 +12,7 @@ internet is full with comparisons between python 2 and python 3, but it is hard
 to tell what are the real gains from doing the migration. Here, I will try to
 explain, in a very subjective manner, the benefits I see from such move.
 
-So let's start with the obvious, **Python 3 is clearly a better language than
+So let's start with the obvious, **python 3 is clearly a better language than
 python 2.6**: ``print`` is a function instead of a statement, now with sane
 arguments; dict and set comprehensions reduce unnecessary, error prone,
 verbosity; real division by default, because that's what you want 99% of the
@@ -20,7 +20,7 @@ time anyway; iterators by default (``range`` replaced ``xrange``,
 ``dict.items()`` replaced ``dict.iteritems()``, etc.); explicit relative
 imports... Actually, the list goes on and on. However, I **don't** think that
 the features above are good reasons to migrate a large project. Modern python
-code, writen with python 3 in mind, will benefit from them, that's for sure. But
+code, written with python 3 in mind, will benefit from them, that's for sure. But
 we do not want to rewrite our code base, we want the transition to be as smooth
 as possible.
 
@@ -29,7 +29,7 @@ So what **is** valuable? Here is my list:
 We must leave python 2.6
 ========================
 
-Our server is based on `twisted`_, which already droped support for python 2.6.
+Our server is based on `twisted`_, which already dropped support for python 2.6.
 Our other main dependency is `SQLAlchemy`_. I don't think that they are going to
 drop support for python 2.6 anytime soon but this day will surely come. In
 general, staying with python 2.6 will soon mean that for each dependency upgrade
@@ -47,7 +47,7 @@ What features do worth the upgrade
 ---------------------
 
 In python 3, when an exception is raised from within an ``except`` block, it is
-concatanated to the former exception, and the traceback of both is available to
+concatenated to the former exception, and the traceback of both is available to
 whoever catch them. That way, we can always be sure that our top most logging
 system will log the entire traceback, even if the latest exception "mask" the
 original one.
