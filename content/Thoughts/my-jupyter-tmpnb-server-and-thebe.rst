@@ -47,6 +47,11 @@ Edit 6.5.16:
 Oreilly shut down their tmpnb server too :-(
 So this blog post won't execute python code anytime soon.
 
+Edit 20.9.15:
+~~~~~~~~~~~~~
+I'm stopping the service on my server due to some number crunching tasks
+I'm running on it.
+
 Edit 1.9.15:
 ~~~~~~~~~~~~
 My digitalocean VM has "only" 512MB of RAM. I decided to span tmpnb
@@ -58,8 +63,3 @@ thebe example
 (`here <https://oreillymedia.github.io/thebe/examples/matplotlib.html>`__),
 namely https://oreillyorchard.com:8000/. It works much better now as
 there are no kernal failures when running the examples.
-
-Edit 20.9.15:
-~~~~~~~~~~~~~
-I'm stopping the service on my server due to some number crunching tasks
-I'm running on it.
