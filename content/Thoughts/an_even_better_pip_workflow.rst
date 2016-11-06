@@ -30,7 +30,7 @@ In "`A Better Pip Workflow™`_", Kenneth Reitz describes a problematic aspect o
     six (1.10.0)
     Unidecode (0.4.19)
 
-Ideally, I would like to manage only the packages I call directly from code / command line (let's call them the "top most dependencies" from now on), and let them manage their dependencies for me. Therefore, I would have to read this output carefully to decide what to upgrade: "did I installed Pygments? and what about docutils? I know for sure that pelican-youtube was installed manually, so let's ``pip install --upgrade pelican-youtube``" and so forth...
+Ideally, I would like to manage only the packages I call directly from code / command line (let's call them the "top most dependencies" from now on), and let them manage their dependencies for me. Therefore, I would have to read this output carefully to decide what to upgrade: "did I install Pygments? and what about docutils? I know for sure that pelican-youtube was installed manually, so let's ``pip install --upgrade pelican-youtube``" and so forth...
 
 Kenneth's recommendation to simplify the upgrade process is to keep two requirements files, the 1st includes all of the dependencies with their versions (``pip freeze > requirements.txt``), and the 2nd, ``requirements-to-freeze.txt`` should be **managed manually** to contain the top most dependencies. When it's time for an upgrade, call ``pip install -r requirements-to-freeze.txt --upgrade``. Just don't forget to run ``pip freeze > requirements.txt`` immediately afterwards!
 
