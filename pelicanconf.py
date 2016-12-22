@@ -40,6 +40,10 @@ MEDIUS_CATEGORIES = {
         'description': "it's showtime!",
         'thumbnail': '/images/thumb_projects.jpg',
     },
+    'Tutorials': {
+        'description': 'look, I learned something',
+        'thumbnail': '/images/thumb_tutorials.jpg',
+    },
     'Thoughts': {
         'description': 'ideas and experimentations',
         'thumbnail': '/images/thumb_thoughts.png',
