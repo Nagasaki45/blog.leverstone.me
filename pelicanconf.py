@@ -33,7 +33,7 @@ LINKS = (
 
 DEFAULT_PAGINATION = 9
 
-PLUGINS = ['pelican_youtube', 'readtime']
+PLUGINS = ['pelican_youtube', 'readtime', 'my_plugins.slick']
 
 MEDIUS_CATEGORIES = {
     'Projects': {
