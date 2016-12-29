@@ -207,7 +207,7 @@ div.main-container {
             }
 
             div.description {
-                color: rgba(0, 0, 0, 0.3);
+                color: rgba(0, 0, 0, 0.6);
             }
 
             div.author-card {
@@ -220,12 +220,12 @@ div.main-container {
                 }
             }
 
-            div.category-card-title {
+            div.card-title {
                 color: #ee4B28;
                 font-size: 14px;
             }
 
-            div.category-card-title:hover {
+            div.card-title:hover {
                 color: #d13210;
             }
         }
@@ -404,22 +404,16 @@ div.page-container {
                     border-radius: 100%;
                     margin-right: 10px;
                 }
-
-
             }
 
             div.post-category-info {
-
                 margin-top: 20px;
-
                 img {
                     max-width: 60px;
                     border-radius: 3px;
                     margin-right: 10px;
                 }
-
             }
-
         }
     }
 
@@ -868,8 +862,7 @@ div.author-page-divider {
     }
 }
 
-
-div.tags a {
+div.cards a {
     color: rgba(0,0,0,0.6);
     background: rgba(255,255,255,0.97);
     font-size: 13px;
@@ -882,12 +875,21 @@ div.tags a {
     display: inline-block;
 }
 
-div.tags a:hover {
+div.cards a:hover {
     color: #d13210;
     border-color: #e4c4b2;
     background: rgba(#fff5d1, 0.1);
     text-decoration: none;
 }
+
+div.cards-wide a {
+  width: 100%;
+  padding: 0px;
+  div.post-category-info {
+    margin: 10px;
+  }
+}
+
 
 pre, code {
     font-family: $font-family-mono;

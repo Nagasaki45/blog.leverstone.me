@@ -31,6 +31,8 @@ LINKS = (
     ('Python.org', 'http://python.org/'),
 )
 
+CSS_FILE = 'main.min.css'
+
 DEFAULT_PAGINATION = 9
 
 PLUGINS = ['pelican_youtube', 'readtime', 'my_plugins.slick',
@@ -69,6 +71,6 @@ MEDIUS_AUTHORS = {
     }
 }
 
-MEDIUS_WIDGETS = ['description', 'authors', 'categories', 'tags']
+MEDIUS_WIDGETS = ['description', 'categories', 'tags']
 
 DISPLAY_CATEGORIES_ON_MENU = False

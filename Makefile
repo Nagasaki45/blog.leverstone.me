@@ -55,7 +55,7 @@ rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
 scss:
-	sass --watch medius/scss/main.scss:medius/static/css/main.css
+	sass --watch theme/static/css/main.scss:theme/static/css/main.min.css --style compressed
 
 dev:
 	make regenerate & make scss & make serve

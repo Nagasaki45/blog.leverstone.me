@@ -58,7 +58,7 @@
 
     <footer>
         {% if article.tags %}
-        <div class="tags">
+        <div class="cards">
             {% for tag in article.tags %}
             <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>
             {% endfor %}
