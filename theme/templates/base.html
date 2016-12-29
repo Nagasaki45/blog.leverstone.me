@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <meta name="author" content="{% block meta_author %}{{ AUTHOR }}{% endblock %}" />
+  <meta name="description" content="{% block meta_description %}{{ DESCRIPTION }}{% endblock %}" />
+  <meta name="keywords" content="{% block meta_tags %}{% endblock %}" />
+  {% include "includes/head.html" %}
+</head>
+<body>
+  {% include "includes/navbar.html" %}
+
+  {% block content %}
+  {% endblock %}
+
+  {% include "includes/footer.html" %}
+  {% include "includes/scripts.html" %}
+</body>
+</html>

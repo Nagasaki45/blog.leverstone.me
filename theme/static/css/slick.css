@@ -1,0 +1,13 @@
+button.slick-prev {
+  left: 5px;
+  z-index: 1;
+}
+
+button.slick-next {
+  right: 5px;
+}
+
+img.slick-slide {
+  padding: 5px;
+  border-radius: 10px;
+}
