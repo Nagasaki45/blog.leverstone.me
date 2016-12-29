@@ -33,7 +33,8 @@ LINKS = (
 
 DEFAULT_PAGINATION = 9
 
-PLUGINS = ['pelican_youtube', 'readtime', 'my_plugins.slick']
+PLUGINS = ['pelican_youtube', 'readtime', 'my_plugins.slick',
+           'my_plugins.categories_order']
 
 MEDIUS_CATEGORIES = {
     'Projects': {
@@ -53,6 +54,8 @@ MEDIUS_CATEGORIES = {
         'thumbnail': '/images/thumb_other.jpg',
     },
 }
+
+CATEGORIES_ORDER = ['Projects', 'Thoughts', 'Tutorials', 'Other']
 
 MEDIUS_AUTHORS = {
     'Tom Gurion': {
