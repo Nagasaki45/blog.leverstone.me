@@ -2,7 +2,7 @@ Open your eyes
 ##############
 :date: 2016-05-14
 :author: Tom Gurion
-:tags: Malinka
+:tags: music
 :slug: open-your-eyes
 
 .. youtube:: SgISW_uyjjU

@@ -2,7 +2,7 @@ Back to music with Malinka
 ##########################
 :date: 2015-08-27
 :author: Tom Gurion
-:tags: Malinka
+:tags: music
 :slug: back-to-music-with-malinka
 
 .. youtube:: fzQoYdzAFz0
