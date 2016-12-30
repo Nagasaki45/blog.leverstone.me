@@ -4,8 +4,8 @@ Media and arts projects - part 1
 :author: Tom Gurion
 :tags: music, PhD
 :slug: media-and-arts-projects-part-1
-:cover: images/bury_me_with_my_money.gif
-:thumbnail: images/bury_me_with_my_money.gif
+:cover: /images/bury_me_with_my_money.gif
+:thumbnail: /images/bury_me_with_my_money.gif
 
 I recently shared some of my `first experiences as a PhD student </my-first-assignment-as-a-phd-student
 .html>`_ in the `Media and Arts Technology program <http://www.mat.qmul.ac.uk/>`_, Queen Mary University of London.
