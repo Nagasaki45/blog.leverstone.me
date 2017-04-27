@@ -55,7 +55,7 @@ GitHub is a place to share and collaborate on git repositories.
 Your local git repository can be "linked" to remote repositories.
 To see them run ``git remote``.
 If you cloned an existing repository you should see one remote, called ``origin``, in the list.
-Otherwise, create a new GitHub repository and add a it as a remote with:
+Otherwise, create a new GitHub repository and add it as a remote with:
 
 .. code-block:: bash
 
