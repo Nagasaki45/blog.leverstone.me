@@ -30,9 +30,8 @@ help:
 	@echo '   make regenerate                     regenerate files upon modification  '
 	@echo '   make publish                        generate using production settings  '
 	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000 '
-	@echo '   make scss                           watch and compile medius stylesheets'
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh   '
-	@echo '   make dev                            run regenerate, scss, and serve     '
+	@echo '   make dev                            run regenerate and serve            '
 	@echo '                                                                           '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html    '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                     '
@@ -54,10 +53,7 @@ publish:
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
-scss:
-	sass --watch theme/static/css/main.scss:theme/static/css/main.min.css --style compressed
-
 dev:
-	make regenerate & make scss & make serve
+	make regenerate & make serve
 
-.PHONY: help regenerate serve publish scss rsync_upload dev
+.PHONY: help regenerate serve publish rsync_upload dev
