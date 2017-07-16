@@ -12,7 +12,7 @@ and things nobody cares about.
 SITEURL = ''
 
 PATH = 'content'
-THEME = 'theme'
+THEME = 'hyde'
 
 TIMEZONE = 'Asia/Jerusalem'
 
