@@ -1,20 +1,13 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Tom Gurion'
-SITENAME = 'Music / Tech / Interaction'
-DESCRIPTION = """
-Let's talk about interactive music systems,
-experimentations with technology, new ideas,
-and things nobody cares about.
-""".strip()
-SITEURL = ''
+SITENAME = 'Tom Gurion'
+BIO = 'A blog about interactive music systems, social interaction, code, and everything in between'
 
 PATH = 'content'
 THEME = 'hyde'
 
-TIMEZONE = 'Asia/Jerusalem'
+TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
@@ -27,49 +20,21 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
+    ('Pelican-hyde', 'https://github.com/jvanz/pelican-hyde'),
     ('Pelican', 'http://getpelican.com/'),
     ('Python.org', 'http://python.org/'),
 )
 
-CSS_FILE = 'main.min.css'
+# Sidebar links
+SOCIAL = (
+    ('home', 'http://tomgurion.me'),
+    ('github', 'https://github.com/Nagasaki45'),
+    ('twitter', 'https://twitter.com/tom_gurion'),
+    ('envelope', 'mailto:nagasaki45@gmail.com'),
+)
 
-DEFAULT_PAGINATION = 9
+DEFAULT_PAGINATION = 10
 
-PLUGINS = ['pelican_youtube', 'readtime', 'my_plugins.slick',
-           'my_plugins.categories_order']
+PLUGINS = ['pelican_youtube']
 
-MEDIUS_CATEGORIES = {
-    'Projects': {
-        'description': "it's showtime!",
-        'thumbnail': '/images/thumb_projects.jpg',
-    },
-    'Tutorials': {
-        'description': 'look, I learned something',
-        'thumbnail': '/images/thumb_tutorials.jpg',
-    },
-    'Thoughts': {
-        'description': 'ideas and experimentations',
-        'thumbnail': '/images/thumb_thoughts.png',
-    },
-    'Other': {
-        'description': 'evrything else',
-        'thumbnail': '/images/thumb_other.jpg',
-    },
-}
-
-CATEGORIES_ORDER = ['Projects', 'Thoughts', 'Tutorials', 'Other']
-
-MEDIUS_AUTHORS = {
-    'Tom Gurion': {
-        'description': 'Musician, interactive music systems researcher, and a pythonista.',
-        'cover': 'http://www.tomgurion.me/images/header.jpg',
-        'image': '/images/TabaShips.jpg',
-        'links': (('home', 'http://www.tomgurion.me/'),
-                  ('github', 'https://github.com/Nagasaki45'),
-                  ('twitter', 'https://twitter.com/tom_gurion'))
-    }
-}
-
-MEDIUS_WIDGETS = ['description', 'categories', 'tags']
-
-DISPLAY_CATEGORIES_ON_MENU = False
+PROFILE_IMAGE = 'TabaShips.jpg'
