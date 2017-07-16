@@ -4,8 +4,10 @@ Media and arts projects - part 2
 :author: Tom Gurion
 :tags: arduino, demo, music programming
 :slug: media-and-arts-projects-part-2
-:cover: /images/tapeless_cassettes_header.jpg
 
+.. image:: /images/tapeless_cassettes_header.jpg
+  :alt: The tapeless cassettes
+  :width: 100%
 
 In a `previous post <{filename}./srpt.rst>`_ I wrote about my assignments for the sound recording module I took as part of my PhD.
 Here, I will present the projects of the Interactive Digital Multimedia Techniques module.
