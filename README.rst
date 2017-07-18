@@ -1,15 +1,12 @@
 My blog
 =======
 
-Static pelican_ generated site, based on the medius_ theme.
+Static pelican_ generated site.
 
 .. code-block:: bash
 
-    # You need to fetch medius
-    git submodule init
-    git submodule update
     # virtualenv is highly recommended
-    virtualenv env
+    python -m venv env
     source env/bin/activate
     pip install -r requirements.txt
 
