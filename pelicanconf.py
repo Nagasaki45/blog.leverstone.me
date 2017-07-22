@@ -2,6 +2,7 @@
 
 AUTHOR = 'Tom Gurion'
 SITENAME = 'Tom Gurion'
+SITESUBTITLE = 'Music / Tech / Interaction blog'
 BIO = 'A blog about interactive music systems, social interaction, code, and everything in between'
 
 PATH = 'content'
