@@ -38,3 +38,12 @@ DEFAULT_PAGINATION = 10
 PLUGINS = ['pelican_youtube']
 
 PROFILE_IMAGE = 'TabaShips.jpg'
+
+STATIC_PATHS = [
+    'images',
+    'extra/favicon.ico',
+]
+
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
