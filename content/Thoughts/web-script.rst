@@ -4,6 +4,7 @@ Python vs. elixir for a web-app wrapper for a script
 :author: Tom Gurion
 :tags: python, elixir, asyncio
 :slug: web-script
+:description: Comparing python (with asyncio) and elixir (with cowboy, plug, and poolboy) for developing a web-app for wrapping a script.
 
 .. image:: /images/python_vs_elixir.png
   :width: 100%

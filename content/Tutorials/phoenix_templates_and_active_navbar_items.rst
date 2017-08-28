@@ -4,6 +4,7 @@ Phoenix, templates, and active navbar items
 :author: Tom Gurion
 :tags: elixir, phoenix, web
 :slug: phoenix-templates-and-active-navbar-items
+:description: A short tutorial on setting the active navbar item dynamically with phoenix and bootstrap.
 
 We build a web-app, and want the items on the navigation bar to be active when the user visits the corresponding page, like this:
 

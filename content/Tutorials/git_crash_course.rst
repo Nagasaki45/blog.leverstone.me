@@ -4,6 +4,7 @@ git crash course
 :author: Tom Gurion
 :tags: tools
 :slug: git-crash-course
+:description: A really short introduction to git for my PhD fellas.
 
 A really short introduction to git for my PhD fellas.
 

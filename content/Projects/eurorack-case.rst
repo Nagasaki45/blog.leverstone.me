@@ -5,6 +5,7 @@ DIY eurorack case
 :author: Tom Gurion
 :tags: music, modular
 :slug: eurorack-case
+:description: Laser cutting a eurorack case. Some pictures and conclusions from the process.
 
 .. image:: /images/eurorack_case_header.jpg
   :alt: Final eurorack case.
