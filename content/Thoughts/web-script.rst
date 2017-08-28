@@ -45,7 +45,7 @@ Otherwise, the script is called and the result is returned to the user.
 Conclusions
 -----------
 
-I'm a complete asyncio newby, and wasn't sure how complex the implementetion will be.
+I'm a complete asyncio newbie, and wasn't sure how complex the implementetion will be.
 It always feel a bit restrictive for me.
 For example, without the already implemented ``asyncio.subprocess`` module, following the requirements would be much more difficult.
 I'm also more confident with elixir, as I use it almost exclusively for everything web-based.
