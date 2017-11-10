@@ -27,12 +27,11 @@ Disclaimers
 - I'm new to python and the world of programming.
 - Books won't do the work for everybody.
 - When I first started to learn python I never thought I will end up
-
-making my leaving out of it, so I've learned python 3 (which is
-preferable language IMHO). However, most of the industry still uses
-python 2. All of the books below are for python 3. It doesn't mean that
-they won't help you learn python 2 also, but you will have to find the
-differences by yourself.
+  making my leaving out of it, so I've learned python 3 (which is
+  preferable language IMHO). However, most of the industry still uses
+  python 2. All of the books below are for python 3. It doesn't mean that
+  they won't help you learn python 2 also, but you will have to find the
+  differences by yourself.
 
 Beginners books
 ---------------
@@ -145,7 +144,7 @@ scipy, which are all more essential for scientific computing than pandas
 as far as I understand that topic.
 On the other hand, pandas is your tool to go if you need to work with
 spreadsheet oriented data (the `library highlights
-page <http://pandas.pydata.org/index.html#library-highlights>`__\ summarize
+page <http://pandas.pydata.org/index.html#library-highlights>`_ summarize
 its strengths pretty good).
 This book was one of the first python books I've read, together with
 the quick python book above. It explains pandas in a very introductory
