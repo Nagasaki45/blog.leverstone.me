@@ -30,9 +30,9 @@ In general, it's a bit wordy but the explanations are very clear and to the poin
 In fact, being a bit verbose is probably what you want anyway if coding is new to you.
 Note that a new edition is about to come out, and an ebook version is already available.
 
-To get familiar python's scientific stack I can highly recommend going over the first section of the `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_.
+To get familiar with the python scientific stack I can highly recommend going over the first section of the `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_.
 Their short intro to the language (chapter 1.2) is also great.
-With this resource you will get familiar with `numpy <http://www.numpy.org/>`_ and `matplotlib <https://matplotlib.org/>`_ relatively fast.
+With this resource one can learn `numpy <http://www.numpy.org/>`_ and `matplotlib <https://matplotlib.org/>`_ relatively fast.
 The last crucial building block in the python scientific stack that you must learn is `pandas <http://pandas.pydata.org/>`_.
 The canonical book for pandas is `Python for Data Analysis <http://shop.oreilly.com/product/0636920023784.do>`_ by Wes McKinney, the creator of the package.
 Personally, `I didn't like this book so much </python-readings.html>`_.
