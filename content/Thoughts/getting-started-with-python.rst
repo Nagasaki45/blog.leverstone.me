@@ -29,6 +29,7 @@ My first steps with python were with the 2nd edition of the same book, and `here
 In general, it's a bit wordy but the explanations are very clear and to the point.
 In fact, being a bit verbose is probably what you want anyway if coding is new to you.
 Note that a new edition is about to come out, and an ebook version is already available.
+If you are looking for a shorter and faster introduction to python take a look at `Learn X in Y minutes <https://learnxinyminutes.com/docs/python3/>`_. It is especially good for those who are already familiar with coding but are new to python.
 
 To get familiar with the python scientific stack I can highly recommend going over the first section of the `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_.
 Their short intro to the language (chapter 1.2) is also great.
