@@ -5,20 +5,9 @@ Static pelican_ generated site.
 
 .. code-block:: bash
 
-    # virtualenv is highly recommended
-    python -m venv env
-    source env/bin/activate
-    pip install -r requirements.txt
-
-Regenerate, serve, and sync the site to my server with:
-
-.. code-block:: bash
-
-    make regenerate
-    make serve
-    make rsync_upload
-
-Moreover, autoenv_ is really fun. Use it!
+    pipenv install  # only once
+    pipenv run make regenerate
+    pipenv run make serve
 
 Deployment
 ----------
@@ -27,16 +16,14 @@ I'm using Codeship_ to deploy. Use the followin setup commands:
 
 .. code-block:: bash
 
-    # Replace default virtualenv with python3
-    rm -rf ${HOME}/.virtualenv
-    virtualenv -p $(which python3) "${HOME}/.virtualenv"
-    pip install -r requirements.txt
+    pip install pipenv
+    pipenv install
 
 And custom deployment script:
 
 .. code-block:: bash
 
-    make rsync_upload
+    pipenv run make rsync_upload
 
 Here is the nginx configuration file, copy this to ``/etc/nginx/sites-available/blog.tomgurion.me``:
 
