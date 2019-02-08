@@ -3,9 +3,17 @@ My blog
 
 Static pelican_ generated site.
 
+In a virtual environment, run:
+
 .. code-block:: bash
 
-    pipenv install  # only once
+    pip install pip-tools
+    pip-sync
+
+Now, in two terminals with activated environment, run:
+
+.. code-block:: bash
+
     pipenv run make regenerate
     pipenv run make serve
 
@@ -16,14 +24,14 @@ I'm using Codeship_ to deploy. Use the followin setup commands:
 
 .. code-block:: bash
 
-    pip install pipenv
-    pipenv install
+    pip install pip-tools
+    pip-sync
 
 And custom deployment script:
 
 .. code-block:: bash
 
-    pipenv run make rsync_upload
+    make rsync_upload
 
 Here is the nginx configuration file, copy this to ``/etc/nginx/sites-available/blog.tomgurion.me``:
 
@@ -40,6 +48,4 @@ Here is the nginx configuration file, copy this to ``/etc/nginx/sites-available/
 Don't forget to add a link to ``sites-enabled`` and restart nginx.
 
 .. _pelican: http://docs.getpelican.com/
-.. _medius: https://github.com/onur/medius
-.. _autoenv: https://github.com/horosgrisa/autoenv
 .. _Codeship: https://codeship.com
