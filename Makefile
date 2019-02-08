@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-SSH_HOST=nagasaki45.com
+SSH_HOST=tomgurion.me
 SSH_PORT=22
 SSH_USER=nagasaki45
 SSH_TARGET_DIR=~/sites/blog.tomgurion.me/output
