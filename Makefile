@@ -24,28 +24,23 @@ ifeq ($(RELATIVE), 1)
 endif
 
 help:
-	@echo 'Makefile for a pelican Web site                                            '
-	@echo '                                                                           '
-	@echo 'Usage:                                                                     '
-	@echo '   make regenerate                     regenerate files upon modification  '
-	@echo '   make publish                        generate using production settings  '
-	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000 '
-	@echo '   make rsync_upload                   upload the web site via rsync+ssh   '
-	@echo '   make dev                            run regenerate and serve            '
-	@echo '                                                                           '
-	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html    '
-	@echo 'Set the RELATIVE variable to 1 to enable relative urls                     '
-	@echo '                                                                           '
+	@echo 'Makefile for a pelican Web site                                         '
+	@echo '                                                                        '
+	@echo 'Usage:                                                                  '
+	@echo '   make regenerate         regenerate files upon modification           '
+	@echo '   make publish            generate using production settings           '
+	@echo '   make serve              serve site at http://localhost:8000          '
+	@echo '   make rsync_upload       upload the web site via rsync+ssh            '
+	@echo '                                                                        '
+	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html '
+	@echo 'Set the RELATIVE variable to 1 to enable relative urls                  '
+	@echo '                                                                        '
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
-ifdef PORT
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
-else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
-endif
+	$(PELICAN) --listen
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
@@ -53,7 +48,4 @@ publish:
 rsync_upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzc --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
-dev:
-	make regenerate & make serve
-
-.PHONY: help regenerate serve publish rsync_upload dev
+.PHONY: help regenerate serve publish rsync_upload
