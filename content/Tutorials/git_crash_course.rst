@@ -19,7 +19,7 @@ Clone something
 There are two ways to start to work in a git repository.
 
 - ``git clone https://github.com/some_user/some_repo.git`` to download a project into a new directory `some_repo`.
-- ``git init`` to make the corrent directory a git repository.
+- ``git init`` to make the current directory a git repository.
 
 Go ahead and clone a project of interest.
 

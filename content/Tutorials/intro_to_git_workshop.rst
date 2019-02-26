@@ -34,7 +34,7 @@ When git manages a directory on your computer we call this directory a local git
 There are two ways to start to work in such a repository:
 
 - ``git clone https://github.com/some_user/some_repo.git`` to download a project into a new directory ``some_repo``.
-- ``git init`` to make the corrent directory a git repository.
+- ``git init`` to make the current directory a git repository.
 
 Unstaged ➜ staged ➜ committed
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
