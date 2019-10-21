@@ -26,6 +26,15 @@ Command what?
 `Introduction to the command line <https://tutorial.djangogirls.org/en/intro_to_command_line/>`_.
 From now on, the rest is done there.
 
+Configuring git for the first time
+----------------------------------
+
+.. code-block:: bash
+
+  git config --global user.name "Your name here"
+  git config --global user.email "your_email@example.com"
+  git config --global core.editor nano
+
 Working locally
 ---------------
 
@@ -60,7 +69,7 @@ Exercise
 4. Write some funny stuff.
 5. Add and commit.
    Try to have an informative commit message.
-6. Repeat steps 4-5 as many times as you want 😄.
+6. Repeat steps 4-5 as many times as you want 🙃.
 
 Explore your repo
 ~~~~~~~~~~~~~~~~~
@@ -88,7 +97,7 @@ Otherwise, create a new GitHub repository and add it as a remote with:
 
   git remote add origin https://github.com/you/your_repo.git
 
-BTW, ``origin`` is just a default name. It has no special meaning.
+Naming a remote ``origin`` is just a convention. It has no special meaning.
 
 ``pull``
 ~~~~~~~~
@@ -165,8 +174,11 @@ If you don't have permissions to push code to a remote repository.
 Exercise
 ~~~~~~~~
 
-Follow `this <https://kirstiejane.github.io/friendly-github-intro/exercises/my-first-pullrequest/>`_ exercise.
-**But!** with `this remote repository <https://github.com/Nagasaki45/mat-trivia>`_ instead.
+1. Fork `this repository <https://github.com/Nagasaki45/mat-trivia>`_.
+2. Clone your fork so you'll have a local git repository on your computer.
+3. Answer some questions in one of the files in ``mat-trivia/trivia/``.
+4. Stage the changes, commit, and push to your remote repo.
+5. Submit a pull request
 
 Where to go next?
 -----------------
