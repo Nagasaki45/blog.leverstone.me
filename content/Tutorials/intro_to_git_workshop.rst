@@ -186,8 +186,10 @@ Where to go next?
 - *Branches* are an important concept in git.
   `Learn them here <http://learngitbranching.js.org/>`_.
 - Ignore files in the repo with ``.gitignore``.
+- `Good intro to git in slides format`_.
 - `Stack overflow`_ for questions, as usual :-)
 - `Pro Git book`_: lots of info, sometime too verbose.
 
+.. _`Good intro to git in slides format`: https://speakerdeck.com/alicebartlett/git-for-humans
 .. _`Stack overflow`: https://stackoverflow.com/
 .. _`Pro Git book`: https://git-scm.com/book/en/v2
