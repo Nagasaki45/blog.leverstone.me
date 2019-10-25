@@ -1,3 +1,8 @@
+.container {
+    padding-top: 4em;
+}
+
+
 .strike {
     text-decoration: line-through;
 }
