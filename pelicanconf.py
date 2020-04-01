@@ -43,8 +43,10 @@ PROFILE_IMAGE = 'me.jpg'
 STATIC_PATHS = [
     'images',
     'extra/favicon.ico',
+    'extra/CNAME',
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
