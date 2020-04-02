@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Tom Gurion'
 SITENAME = 'Tom Gurion'
-SITESUBTITLE = 'Music / Tech / Interaction blog'
-BIO = 'A blog about interactive music systems, social interaction, code, and everything in between'
+SITESUBTITLE = 'Blog'
+BIO = 'A blog about a mixture of hobbies, work, and other interests'
 SITEURL = ''
 
 PATH = 'content'
