@@ -26,7 +26,7 @@ AUTHOR_FEED_RSS = None
 SOCIAL = (
     ('home', 'http://tomgurion.me'),
     ('github', 'https://github.com/Nagasaki45'),
-    ('twitter', 'https://twitter.com/tom_gurion'),
+    ('twitter', 'https://twitter.com/nagasaki45'),
     ('envelope', 'mailto:nagasaki45@gmail.com'),
 )
 
