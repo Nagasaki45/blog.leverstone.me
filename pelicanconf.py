@@ -1,9 +1,12 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
 
 AUTHOR = 'Tom Gurion'
 SITENAME = 'Tom Gurion'
 SITESUBTITLE = 'Music / Tech / Interaction blog'
 BIO = 'A blog about interactive music systems, social interaction, code, and everything in between'
+SITEURL = ''
 
 PATH = 'content'
 THEME = 'hyde'
@@ -19,13 +22,6 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (
-    ('Pelican-hyde', 'https://github.com/jvanz/pelican-hyde'),
-    ('Pelican', 'http://getpelican.com/'),
-    ('Python.org', 'http://python.org/'),
-)
-
 # Sidebar links
 SOCIAL = (
     ('home', 'http://tomgurion.me'),
@@ -37,6 +33,9 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 PLUGINS = ['pelican_youtube']
+
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
 
 PROFILE_IMAGE = 'me.jpg'
 
