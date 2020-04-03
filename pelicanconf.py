@@ -24,7 +24,7 @@ AUTHOR_FEED_RSS = None
 
 # Sidebar links
 SOCIAL = (
-    ('home', 'http://tomgurion.me'),
+    ('home', 'https://tomgurion.me'),
     ('github', 'https://github.com/Nagasaki45'),
     ('twitter', 'https://twitter.com/nagasaki45'),
     ('email', 'mailto:nagasaki45@gmail.com'),
