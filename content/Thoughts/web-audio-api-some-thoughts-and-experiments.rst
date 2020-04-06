@@ -41,14 +41,14 @@ usage because of the next reasons:
    <div class="separator" style="clear: both; text-align: center;">
 
 .. image:: /images/web_audio_screenshot.png
-  :target: http://web-audio.nagasaki45.com/
+  :target: https://collaborative-synth.herokuapp.com/
   :alt: Web-audio experiment screenshot
 
 .. raw:: html
 
    </div>
 
-That's being said, `here <http://web-audio.nagasaki45.com/>`__ are my
+That's being said, `here <https://collaborative-synth.herokuapp.com/>`__ are my
 experiment with the API. If you are interesting in more information and
 tutorials be sure to take a look at the "Useful links" menu (top
 navigation bar). And as always, source code can be found at
