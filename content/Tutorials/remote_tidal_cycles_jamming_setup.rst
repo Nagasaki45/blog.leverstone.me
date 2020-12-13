@@ -106,7 +106,7 @@ This is a result of the network latency.
 To fix that, increase tidal's latency.
 If you're using atom go to preferences > open config folder. This brings up the tidal source code. In ``tidalcycles/lib/boot.tidal``, change the ``oLatency`` value to 0.4 or so in this line of code:
 
-.. code::
+.. code-block:: haskell
 
   tidal <- startTidal (superdirtTarget {oLatency = 0.4, oAddress = "127.0.0.1", oPort = 57120}) (defaultConfig {cFrameTimespan = 1/20})
 
@@ -123,6 +123,7 @@ But the live coder cannot hear anything yet.
 We used a 2nd computer that takes mixer's output and streams it back to the live coder over zoom.
 
 The entire system looks something like this.
+The area in blue is for the laptop running tidal and the area in pink is the SC + hardware synth end of the system.
 
 .. image:: /images/tidal_remote_diagram.jpg
   :alt: TidalCycles logo
@@ -153,5 +154,8 @@ with
   socat TCP-LISTEN:12345,fork UDP4:localhost:57121
 
 **Enjoy jamming and keep safe!**
+
+Footnotes
+=========
 
 .. [#] Setting the server this way is not 100% secure. We didn't mind it too much as this is a throwaway server with IP that no one except for us will ever know. If you are worried about security consider creating a forward tunnel from the laptop running tidal to the server instead of exposing the port to the public.
