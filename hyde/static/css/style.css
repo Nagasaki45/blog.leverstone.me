@@ -11,3 +11,8 @@ video {
 .bold {
     font-weight: bold;
 }
+
+.footnote-reference {
+    vertical-align: top;
+    font-size: small;
+}
