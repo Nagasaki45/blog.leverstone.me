@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:title" content="Writing a programming book? Don't compose an utility library!" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://blog.tomgurion.me/writing-a-programming-book-dont-compose-an-utility-library.html" />
+		<meta property="og:image" content="https://blog.tomgurion.me/images/me.jpg" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Tom Gurion | Blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/poole.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/hyde.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/youtube.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-99">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="https://blog.tomgurion.me/images/me.jpg">
+					Tom Gurion
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead">A blog about a mixture of hobbies, work, and other interests </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+					<a class="sidebar-nav-item" href="https://tomgurion.me" rel="me">
+						<i class="fa fa-home"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://github.com/Nagasaki45" rel="me">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://twitter.com/nagasaki45" rel="me">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="sidebar-nav-item" href="mailto:nagasaki45@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+			<a class="sidebar-nav-item" href="feeds/all.atom.xml">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Writing a programming book? Don't compose an utility library!</h1>
+	<span class="post-date">Sat 23 May 2015</span>
+	<p>I came across two books recently, in which the authors decided to
+write an utility library. The first book was <a class="reference external" href="http://www.amazon.com/Python-Practice-Concurrency-Libraries-Developers/dp/0321905636/">Python in Practice, by
+Mark
+Summerfield</a>
+(my opinion about the book can be found
+<a class="reference external" href="http://blog.tomgurion.me/python-readings.html">here</a>),
+and the second, which I'm still reading, is <a class="reference external" href="http://www.amazon.com/Doing-Bayesian-Data-Analysis-Second/dp/0124058884">Doing Bayesian Data Analysis,
+Second Edition, by John Kruschke</a>.
+A separate review will be added when I will finish reading it.
+The books are different in their nature: One is about python
+programming, while the other is about statistical methods, and uses the
+R programming language for hands-on examples and exercises; the first
+book is average quality overall (IMHO) and the second is absolutely
+amazing! However, I believe that I may be able criticize the utility
+libraries that came with the books in the same manner: Don't do this!
+And why?</p>
+<p><strong>Installation process breaks conventions</strong></p>
+<p>When I need an external tool in a python project I know I have
+<a class="reference external" href="https://pypi.python.org/pypi">pypi</a> to rely on for finding packages.
+I have <a class="reference external" href="https://pip.pypa.io/en/stable/">pip</a> to easily install the
+package and prefer to work with
+<a class="reference external" href="https://virtualenv.pypa.io/en/latest/">virtualenv</a> whenever
+possible. This set of tools help me in maintaining a sane codebase, and
+reduce the effort of managing the dependencies by my own.
+There is no chance that I will copy an external module into my project
+and source control it unless I'll have to, so why to use this module in
+an educational project in the first place?
+I really don't know what is the convention in installing R external
+packages, but I believe that Kruschke suggestion of sourcing his
+supplied scripts is not the proper way to do this (enlighten me if I'm
+wrong).</p>
+<p><strong>Package maintenance / code quality</strong></p>
+<p>Before&nbsp;I'm installing an external package I tend to search
+about the package quality. First thing is checking how many stars the
+package have on github and how many times it was downloaded from pypi.
+And there is a reason behind it: I can rely on packages that are used
+often to have better code quality; through gihub I can browse the
+package issues / latest commits and make sure that it is still
+maintained.
+I'm sure that books authors invest a large amount of time in writing
+their utility libraries. But code free of bugs doesn't exists, and I
+prefer to know that the codebase is maintained before I use it (again,
+without distinction between educational and &quot;real&quot; projects).</p>
+<p><strong>Not specific enough</strong></p>
+<p>If your utility library is a mix of different solutions for different
+problems, it might not worth keeping in our toolbox. The above is
+probably more relevant to Python in practice than to Doing Bayesian Data
+Analysis, but I think it's still worth mentioning.</p>
+<p><strong>Documentation</strong></p>
+<p>When I choose a tool to work with I want it's documentation
+to be top notch! Take
+<a class="reference external" href="https://docs.djangoproject.com/en/1.8/">django</a> for example. The
+project's documentation is not less than perfect, including a great
+tutorial for beginners. I really don't want to look for the book when
+I'm interesting in put in use some less obvious function from an utility
+library.</p>
+<img alt="Doing Bayesian Data Analysis, Second Edition, by John Kruschke" src="https://sites.google.com/site/doingbayesiandataanalysis/_/rsrc/1403617861639/config/customLogo.gif?revision=5" style="width: 100%;" />
+<div class="section" id="what-i-m-expecting-from-authors-instead">
+<h2>What I'm expecting from authors instead</h2>
+<ul class="simple">
+<li>If you think that your utility functions worth it pack it and publish
+it as any other package.</li>
+<li>I really don't mind reading one or two additional pages of code&nbsp;in
+your book, if there's something interesting in it. Again, if the code
+deserved to be mentioned in your book, it may be also deserved to be
+talked about explicitly.</li>
+<li>If this functionality exists elsewhere you should reference it, and
+advise the user to use it. I've never wrote code in R, but was ready
+to learn how to work with its ecosystem. I expected Kruschke to teach
+me that, instead of showing me how to source his supplied scripts.</li>
+</ul>
+</div>
+<div class="section" id="late-disclaimer">
+<h2>Late disclaimer</h2>
+<p>Don't get me wrong, supplying code as part of your book is great! But
+there are different ways to do it: David Beazley's Python Cookbook is
+full of code snippets, fully commented and explained; In Test-Driven
+Development with Python, Harry Percival guides the reader in developing
+an webapp with reference code available at github.
+Don't get me wrong 2: The above doesn't mean that the books are bad.</p>
+</div>
+<div class="section" id="edit">
+<h2>Edit:</h2>
+<p>Don't miss Kruschke's comment below! He lights the above topics from
+different angle and supplies great arguments for his decisions.
+Maybe, as a programmer, I tend to rely on the language ecosystem mechamisms instead of being satisfied with the easier, and more beginners friendly solution Kruschke proposes.
+I definitely agree with him that an easier-to-use software for data science, and bayesian data analysis in particular, is always welcomed.
+I would like to seize the opportunity to thank Kruschke again for his great book! I really enjoy reading it and I'm sure that I will continue to use the insights gained from it in the future.</p>
+</div>
+
+</div>
+		</div>
+	</body>
+</html>

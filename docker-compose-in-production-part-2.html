@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:title" content="docker-compose in production - part 2" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://blog.tomgurion.me/docker-compose-in-production-part-2.html" />
+		<meta property="og:image" content="https://blog.tomgurion.me/images/me.jpg" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Tom Gurion | Blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/poole.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/hyde.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/youtube.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-99">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="https://blog.tomgurion.me/images/me.jpg">
+					Tom Gurion
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead">A blog about a mixture of hobbies, work, and other interests </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+					<a class="sidebar-nav-item" href="https://tomgurion.me" rel="me">
+						<i class="fa fa-home"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://github.com/Nagasaki45" rel="me">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://twitter.com/nagasaki45" rel="me">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="sidebar-nav-item" href="mailto:nagasaki45@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+			<a class="sidebar-nav-item" href="feeds/all.atom.xml">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">docker-compose in production - part 2</h1>
+	<span class="post-date">Fri 05 August 2016</span>
+	<p>Few months ago I shared my <a class="reference external" href="/docker-compose-in-production.html">experiences with docker-compose in production</a>.
+Recently I faced another deployment and decided to use the same technique. This
+time I used it somewhat differently. In this blog post I would like to share the
+new experiences.</p>
+<p>I started by following the process that went so well last time, which summarized
+to:</p>
+<ul class="simple">
+<li>Create a <tt class="docutils literal">Dockerfile</tt> for the app.</li>
+<li>Create a <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> file with my app and its dependencies (official postgres and redis docker images).</li>
+<li><tt class="docutils literal">git clone</tt> the project on the server.</li>
+<li>Build the project <strong>on the server</strong>.</li>
+<li>Copy the &quot;secrets&quot; file to the server.</li>
+<li>Spin everything with <tt class="docutils literal"><span class="pre">docker-compose</span> up</tt>.</li>
+</ul>
+<p>But guess what? My digital ocean's droplet has only 512MB of RAM, which are not
+enough for building the image. The beloved technique couldn't work with my
+server!</p>
+<div class="section" id="docker-hub-to-the-rescue">
+<h2><a class="reference external" href="https://hub.docker.com/">Docker Hub</a> to the rescue</h2>
+<p>OK. I can't build the image on the server, but I still want to use docker and
+docker-compose for all of their advantages. The solution will be to build the
+image somewhere else, upload it to <a class="reference external" href="https://hub.docker.com/">Docker Hub</a>- an open and free repository
+for docker images - and fetch it from there directly to the server.</p>
+<p>There are two ways to upload a docker image to Docker Hub. The first is to link
+it to your github account and instruct it to build an image whenever you push
+code to the repository. The second is to build the image locally and push it to
+the Hub using the docker command line tool. I wished I could choose the first
+option, but due to memory restrictions the build failed on their build servers
+similarly to the way it failed on my digital ocean droplet. Therefore, I choose
+the 2nd option.</p>
+<p>With this revised deployment technique there are only two files on the server,
+the <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> file and the &quot;secrets&quot; file. In my first blog post
+about docker-compose the <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> used the current directory as
+the <tt class="docutils literal">build</tt> path for the image. Now, the full image name on Docker Hub is
+referenced. Here is my <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> file:</p>
+<div class="highlight"><pre><span></span><span class="nt">web</span><span class="p">:</span>
+  <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nagasaki45/krihelinator_web</span>
+  <span class="nt">ports</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">80:80</span>
+  <span class="nt">links</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">db</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">stash</span>
+  <span class="nt">env_file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">./secrets</span>
+  <span class="nt">restart</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
+
+<span class="nt">db</span><span class="p">:</span>
+  <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">postgres</span>
+  <span class="nt">restart</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
+
+<span class="nt">stash</span><span class="p">:</span>
+  <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">redis</span>
+  <span class="nt">restart</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">always</span>
+</pre></div>
+</div>
+<div class="section" id="summary">
+<h2>Summary</h2>
+<p>Ideally, a server should only serve the application to the clients, and run the
+necessary infrastructure to support it. Building or compiling a project on the
+server is possible, but it doesn't have to be that way. With docker and
+docker-compose based deployments the build can be done on one machine (be it
+your local machine, Docker Hub's dedicated build servers, or some other
+continuous integration / delivery server). But it's not only possible, it even
+simplifies the process a bit as there is no source code involved, and less
+operations run on the server. Give docker-compose a try, you won't regret it.</p>
+</div>
+
+</div>
+		</div>
+	</body>
+</html>

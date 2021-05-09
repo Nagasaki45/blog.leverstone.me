@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:title" content="Web Audio API - some thoughts and experiments" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://blog.tomgurion.me/web-audio-api-some-thoughts-and-experiments.html" />
+		<meta property="og:image" content="https://blog.tomgurion.me/images/me.jpg" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Tom Gurion | Blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/poole.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/hyde.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/youtube.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-99">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="https://blog.tomgurion.me/images/me.jpg">
+					Tom Gurion
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead">A blog about a mixture of hobbies, work, and other interests </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+					<a class="sidebar-nav-item" href="https://tomgurion.me" rel="me">
+						<i class="fa fa-home"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://github.com/Nagasaki45" rel="me">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://twitter.com/nagasaki45" rel="me">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="sidebar-nav-item" href="mailto:nagasaki45@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+			<a class="sidebar-nav-item" href="feeds/all.atom.xml">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Web Audio API - some thoughts and experiments</h1>
+	<span class="post-date">Fri 14 February 2014</span>
+	<p>For me, being able to use advance audio programming on the web looks
+like a dream just a couple of weeks ago, and I'm not the only one for
+sure.
+Doing audio programming, I've mainly experienced with Max/MSP and Pd
+but my interest in shared music creation / consumption and interactive
+systems have long seems to demand the extension of this skill set; as
+Udi Oron rightly argued in
+&quot;<a class="reference external" href="http://blog.tomgurion.me/hackita.html">Hackita</a>&quot;
+two months ago: you have no chance to convince someone to download your
+desktop app (Max or Pd patches for example), give them a web app
+instead!
+I'm not sure if I've heard of the <a class="reference external" href="http://www.w3.org/TR/webaudio/">Web Audio
+API</a>&nbsp;before last week, but even if I
+did I probably wouldn't had a clue of how to use it back then (before
+learning web development and JavaScript&nbsp;at Hackita). Today I can say
+that it looks like a great solution for audio programming, and a good
+way to look for if you interesting in designing systems for public wide
+usage because of the next reasons:</p>
+<ul class="simple">
+<li>As claimed before, no one downloads and install desktop application
+anymore unless it came from known source and the one that download it
+knows for sure that he wants to use it (as opposed to just trying
+things out).</li>
+<li>It's probably the easiest way to go if you want shared behavior and
+interaction between users of the system.</li>
+<li>Web standards are here to stay. You can be sure that organizations
+like Google, Mozilla, and Microsoft will compete to provide the best
+implementation possible.</li>
+<li>The API itself looks very promising. I hope that I will be able to
+summarize pros and cons soon.</li>
+</ul>
+<div class="separator" style="clear: both; text-align: center;"><a class="reference external image-reference" href="https://collaborative-synth.herokuapp.com/"><img alt="Web-audio experiment screenshot" src="/images/web_audio_screenshot.png" /></a>
+</div><p>That's being said, <a class="reference external" href="https://collaborative-synth.herokuapp.com/">here</a> are my
+experiment with the API. If you are interesting in more information and
+tutorials be sure to take a look at the &quot;Useful links&quot; menu (top
+navigation bar). And as always, source code can be found at
+<a class="reference external" href="https://github.com/Nagasaki45/Web-Audio">github</a>.</p>
+
+</div>
+		</div>
+	</body>
+</html>

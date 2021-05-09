@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="A 4 hours intro to git workshop for my PhD fellas.">
+	<meta property="og:description" content="A 4 hours intro to git workshop for my PhD fellas.">
+	<meta property="og:title" content="Intro to git workshop" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://blog.tomgurion.me/intro-to-git-workshop.html" />
+		<meta property="og:image" content="https://blog.tomgurion.me/images/me.jpg" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Tom Gurion | Blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/poole.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/hyde.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/youtube.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-99">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="https://blog.tomgurion.me/images/me.jpg">
+					Tom Gurion
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead">A blog about a mixture of hobbies, work, and other interests </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+					<a class="sidebar-nav-item" href="https://tomgurion.me" rel="me">
+						<i class="fa fa-home"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://github.com/Nagasaki45" rel="me">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://twitter.com/nagasaki45" rel="me">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="sidebar-nav-item" href="mailto:nagasaki45@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+			<a class="sidebar-nav-item" href="feeds/all.atom.xml">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Intro to git workshop</h1>
+	<span class="post-date">Thu 21 February 2019</span>
+	<p>A 4 hours introduction to git workshop for my PhD fellas.
+Based on an old <a class="reference external" href="http://blog.tomgurion.me/git-crash-course.html">git crash course</a> blog post.</p>
+<img alt="git logo" src="/images/git_logo.gif" style="width: 100%;" />
+<div class="section" id="why">
+<h2>Why?</h2>
+<ul class="simple">
+<li>Keep your projects organized.</li>
+<li>Collaborate with others.</li>
+<li>Get involved with open source.</li>
+</ul>
+</div>
+<div class="section" id="command-what">
+<h2>Command what?</h2>
+<p><a class="reference external" href="https://tutorial.djangogirls.org/en/intro_to_command_line/">Introduction to the command line</a>.
+From now on, the rest is done there.</p>
+</div>
+<div class="section" id="configuring-git-for-the-first-time">
+<h2>Configuring git for the first time</h2>
+<div class="highlight"><pre><span></span>git config --global user.name <span class="s2">&quot;Your name here&quot;</span>
+git config --global user.email <span class="s2">&quot;your_email@example.com&quot;</span>
+git config --global core.editor nano
+</pre></div>
+</div>
+<div class="section" id="working-locally">
+<h2>Working locally</h2>
+<p>When git manages a directory on your computer we call this directory a local git repository.</p>
+<p>There are two ways to start to work in such a repository:</p>
+<ul class="simple">
+<li><tt class="docutils literal">git clone <span class="pre">https://github.com/some_user/some_repo.git</span></tt> to download a project into a new directory <tt class="docutils literal">some_repo</tt>.</li>
+<li><tt class="docutils literal">git init</tt> to make the current directory a git repository.</li>
+</ul>
+<div class="section" id="unstaged-staged-committed">
+<h3>Unstaged ➜ staged ➜ committed</h3>
+<img alt="git local workflow" src="/images/git_staging_commit.png" style="width: 100%;" />
+<p><strong>Remember!</strong> you can always see the current state and the staging / unstaging commands with <tt class="docutils literal">git status</tt>, so don't try to memorize them.</p>
+<p>When you are satisfied with the changes commit them:</p>
+<div class="highlight"><pre><span></span>git commit -m <span class="s2">&quot;an informative message describing your change&quot;</span>
+</pre></div>
+</div>
+<div class="section" id="exercise">
+<h3>Exercise</h3>
+<ol class="arabic simple">
+<li>Create a directory called <tt class="docutils literal">jokes</tt>.</li>
+<li>Make it a local git repository.</li>
+<li>Create a file called <tt class="docutils literal">jokes.txt</tt> in that directory.</li>
+<li>Write some funny stuff.</li>
+<li>Add and commit.
+Try to have an informative commit message.</li>
+<li>Repeat steps 4-5 as many times as you want 🙃.</li>
+</ol>
+</div>
+<div class="section" id="explore-your-repo">
+<h3>Explore your repo</h3>
+<div class="highlight"><pre><span></span>git log                 <span class="c1"># see the history</span>
+git diff                <span class="c1"># see the unstaged changes</span>
+git diff --staged       <span class="c1"># see the staged changes</span>
+git show &lt;COMMIT_HASH&gt;  <span class="c1"># see the changes in a commit</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="collaborating-through-github">
+<h2>Collaborating through GitHub</h2>
+<p>GitHub is a place to share and collaborate on git repositories.
+Go head and create an account!</p>
+<p>Your local git repository can be &quot;linked&quot; to remote repositories.
+To see them run <tt class="docutils literal">git remote</tt> (or with extra info using <tt class="docutils literal">git remote <span class="pre">-v</span></tt>).
+If you cloned an existing repository you should see one remote, called <tt class="docutils literal">origin</tt>, in the list.
+Otherwise, create a new GitHub repository and add it as a remote with:</p>
+<div class="highlight"><pre><span></span>git remote add origin https://github.com/you/your_repo.git
+</pre></div>
+<p>Naming a remote <tt class="docutils literal">origin</tt> is just a convention. It has no special meaning.</p>
+<div class="section" id="pull">
+<h3><tt class="docutils literal">pull</tt></h3>
+<p>To get the latest changes (commits) from your remote run:</p>
+<div class="highlight"><pre><span></span>git pull origin master
+</pre></div>
+<p>What's master? The name of the default branch.
+More on that later.</p>
+</div>
+<div class="section" id="push">
+<h3><tt class="docutils literal">push</tt></h3>
+<p>If you have permissions to push code to the remote repository you can update the remote with your changes (commits) by running:</p>
+<div class="highlight"><pre><span></span>git push origin master
+</pre></div>
+<p><strong>Remember!</strong> Always <tt class="docutils literal">pull</tt> before you <tt class="docutils literal">push</tt> to avoid unnecessary conflicts.</p>
+<img alt="git Austin Powers meme" src="/images/git_meme.jpg" style="width: 100%;" />
+<p>Assuming that you already have a local repository with a remote (called <tt class="docutils literal">origin</tt>) that you can push code to, a simple but complete workflow might look like that:</p>
+<div class="highlight"><pre><span></span>git pull origin master         <span class="c1"># to get the latest changes</span>
+<span class="c1"># work work work...</span>
+git status                     <span class="c1"># to see all of the changes you did</span>
+git diff                       <span class="c1"># optional but handy</span>
+git add FILE_WITH_CHANGES      <span class="c1"># repeat as necessary</span>
+git commit -m <span class="s2">&quot;your message&quot;</span>   <span class="c1"># commit the changes to the repository</span>
+git push origin master         <span class="c1"># to upload your changes</span>
+</pre></div>
+</div>
+<div class="section" id="id1">
+<h3>Exercise</h3>
+<ol class="arabic simple">
+<li>Create a new GitHub repo, called <tt class="docutils literal">jokes</tt>.</li>
+<li>Add it as a remote for your local <tt class="docutils literal">jokes</tt> repo.</li>
+<li>Push your jokes to GitHub.</li>
+</ol>
+</div>
+<div class="section" id="forks-and-pull-requests">
+<h3>Forks and pull requests</h3>
+<p>If you don't have permissions to push code to a remote repository.</p>
+<ol class="arabic simple">
+<li>Fork the repository.
+It will copy the remote repository to your account.</li>
+</ol>
+<img alt="GitHub fork button" src="/images/github_fork.png" style="width: 100%;" />
+<ol class="arabic simple" start="2">
+<li>Add your fork as a remote.</li>
+</ol>
+<div class="highlight"><pre><span></span>git remote add mine https://github.com/you/your_repo.git
+</pre></div>
+<ol class="arabic simple" start="3">
+<li>Work on your fork.</li>
+<li>Send your commits to the owner(s) of the projects using a pull request.</li>
+</ol>
+<img alt="GitHub pull request button" src="/images/github_pull_request.png" style="width: 100%;" />
+</div>
+<div class="section" id="id2">
+<h3>Exercise</h3>
+<ol class="arabic simple">
+<li>Fork <a class="reference external" href="https://github.com/Nagasaki45/mat-trivia">this repository</a>.</li>
+<li>Clone your fork so you'll have a local git repository on your computer.</li>
+<li>Answer some questions in one of the files in <tt class="docutils literal"><span class="pre">mat-trivia/trivia/</span></tt>.</li>
+<li>Stage the changes, commit, and push to your remote repo.</li>
+<li>Submit a pull request</li>
+</ol>
+</div>
+</div>
+<div class="section" id="where-to-go-next">
+<h2>Where to go next?</h2>
+<ul class="simple">
+<li><em>Branches</em> are an important concept in git.
+<a class="reference external" href="http://learngitbranching.js.org/">Learn them here</a>.</li>
+<li>Ignore files in the repo with <tt class="docutils literal">.gitignore</tt>.</li>
+<li><a class="reference external" href="https://speakerdeck.com/alicebartlett/git-for-humans">Good intro to git in slides format</a>.</li>
+<li><a class="reference external" href="https://stackoverflow.com/">Stack overflow</a> for questions, as usual :-)</li>
+<li><a class="reference external" href="https://git-scm.com/book/en/v2">Pro Git book</a>: lots of info, sometime too verbose.</li>
+</ul>
+</div>
+
+</div>
+		</div>
+	</body>
+</html>

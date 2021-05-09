@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:description" content="A blog about a mixture of hobbies, work, and other interests">
+	<meta property="og:title" content="Continuous integration and delivery with travis-ci and codeship" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://blog.tomgurion.me/continuous-integration-and-delivery-with-travis-ci-and-codeship.html" />
+		<meta property="og:image" content="https://blog.tomgurion.me/images/me.jpg" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Tom Gurion | Blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/poole.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/hyde.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/youtube.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-99">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="https://blog.tomgurion.me/images/me.jpg">
+					Tom Gurion
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead">A blog about a mixture of hobbies, work, and other interests </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+					<a class="sidebar-nav-item" href="https://tomgurion.me" rel="me">
+						<i class="fa fa-home"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://github.com/Nagasaki45" rel="me">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://twitter.com/nagasaki45" rel="me">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="sidebar-nav-item" href="mailto:nagasaki45@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+			<a class="sidebar-nav-item" href="feeds/all.atom.xml">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Continuous integration and delivery with travis-ci and codeship</h1>
+	<span class="post-date">Mon 30 May 2016</span>
+	<img alt="Travis vs. Codeship" src="/images/travis_codeship.png" style="width: 100%;" />
+<p>Generally speaking, continuous integration (CI) is the process of
+running your test suite automatically when you push code to your repo.
+Continuous delivery / deployment (CD) is the process of deploying the
+new code to your server whenever you push to specific branches in your
+repo. There is enough information about these on the web so I won’t
+cover it here. Instead, I would like to talk about travis-ci and
+codeship, which are: online services that help you accomplish these
+tasks easily; tightly integrated with github; free for open source
+projects; very recommended. There are many similar services, of course,
+but I won’t mention them as I didn’t use them enough to have an opinion.
+So, let’s start with travis.</p>
+<div class="section" id="travis-ci">
+<h2><a class="reference external" href="https://travis-ci.org/">Travis-CI</a></h2>
+<p>AFAIK, travis is the natural CI choice for python developers, and for
+good reasons:</p>
+<ul class="simple">
+<li>It’s the easiest to configure and use.</li>
+<li>Configuration is kept in the git repo, using a YAML file. Therefore,
+it is version controlled, which is always a good thing.</li>
+<li>It will run your tests against a set of python versions, each one in
+its own build (AKA a test matrix).</li>
+</ul>
+<p>There are situations, however, in which travis might not be enough for
+you, especially when you want to set up continuous deployment. Enters
+codeship.</p>
+</div>
+<div class="section" id="codeship">
+<h2><a class="reference external" href="https://codeship.com/">Codeship</a></h2>
+<p>Codeship is clearly inferior:</p>
+<ul class="simple">
+<li>It is configured using a web interface, using bash scripts to prepare
+the environment, run the tests, and deploy (with different script per
+branch, which is nice). Yep, you’re expected to type bash scripts into
+web forms!</li>
+<li>The environment setup is lacking. The <a class="reference external" href="https://codeship.com/documentation/languages/python/">official recommendation for setting
+the python version</a>, for example, looks like a hack.</li>
+<li>You can’t define a test matrix.</li>
+</ul>
+<p>It sounds bad, I know, but on the other hand codeship has one feature
+that is crucial to my workflow. Each project on codeship have an
+ssh-key. Therefore, once you copied the public key to your server
+<tt class="docutils literal">authorized_keys</tt> file, codeship can ssh / scp to it without
+additional effort, exactly as you do from your development environment.</p>
+<p>For example, I have static sites that use a simple script to generate
+the site and upload it to the server using <tt class="docutils literal">rsync</tt>. From my
+development environment it looks like:</p>
+<div class="highlight"><pre><span></span>make rsync_upload
+</pre></div>
+<p>And guess what? The codeship deployment script do exactly the same when
+I push code to the <tt class="docutils literal">master</tt> branch, and nothing more!</p>
+<blockquote>
+It is important to note that travis do offer <a class="reference external" href="https://docs.travis-ci.com/user/private-dependencies/#User-Key">this feature</a> for
+paid plans, and that <a class="reference external" href="https://gist.github.com/lukewpatterson/4242707">hacky alternatives</a> exist.</blockquote>
+</div>
+<div class="section" id="wrap-up">
+<h2>Wrap up</h2>
+<p>Personally, for everything &quot;deployable&quot; I stay with codeship at the moment,
+as this single feature is more important to me than travis's advantages.
+To compensate, I document the different scripts (environment setup, test
+running, and deployment) in the project <tt class="docutils literal">README</tt>. In addition, although the
+test matrix is a crucial feature when you work on libraries and tools,
+web sites and application are usually different. You control the environment
+you deploy to, and can set the CI environment to be the same / very similar.</p>
+<p>Having said that, for everything else, just go with travis. You won't
+regret it.</p>
+</div>
+<div class="section" id="tl-dr">
+<h2>TL;DR</h2>
+<ul class="simple">
+<li>Prefer <a class="reference external" href="https://travis-ci.org/">travis-ci</a> when developing a library / command line
+utility / non “deployable” software.</li>
+<li>Use <a class="reference external" href="https://codeship.com/">codeship</a> for continuous deployment of web sites and
+applications.</li>
+</ul>
+</div>
+
+</div>
+		</div>
+	</body>
+</html>

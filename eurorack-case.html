@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Metadata -->
+	<meta name="description" content="Laser cutting a eurorack case. Some pictures and conclusions from the process.">
+	<meta property="og:description" content="Laser cutting a eurorack case. Some pictures and conclusions from the process.">
+	<meta property="og:title" content="DIY eurorack case" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://blog.tomgurion.me/eurorack-case.html" />
+		<meta property="og:image" content="https://blog.tomgurion.me/images/me.jpg" />
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Tom Gurion | Blog</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/poole.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/hyde.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/youtube.css" />
+		<link rel="stylesheet" href="https://blog.tomgurion.me/theme/css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-99">
+<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+
+			<h1>
+				<a href="/">
+					<img class="profile-picture" src="https://blog.tomgurion.me/images/me.jpg">
+					Tom Gurion
+				</a>
+			</h1>
+			<p class="lead"></p>
+			<p class="lead">A blog about a mixture of hobbies, work, and other interests </p>
+			<p></p>
+		</div>
+		<nav class="sidebar-nav">
+					<a class="sidebar-nav-item" href="https://tomgurion.me" rel="me">
+						<i class="fa fa-home"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://github.com/Nagasaki45" rel="me">
+						<i class="fa fa-github"></i>
+					</a>
+					<a class="sidebar-nav-item" href="https://twitter.com/nagasaki45" rel="me">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a class="sidebar-nav-item" href="mailto:nagasaki45@gmail.com">
+						<i class="fa fa-envelope"></i>
+					</a>
+			<a class="sidebar-nav-item" href="feeds/all.atom.xml">
+				<i class="fa fa-feed"></i>
+			</a>
+		</nav>
+	</div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">DIY eurorack case</h1>
+	<span class="post-date">Sun 16 July 2017</span>
+	<img alt="Final eurorack case." src="/images/eurorack_case_header.jpg" style="width: 100%;" />
+<p>I recently drawn into the rabbit hole of modular synthesis.
+This week I finished building my first eurorack case.
+It's a 3U 84hp skiff.
+Or in humans language, it is a relatively small, beginners sized case, to accommodate my first modules.</p>
+<div class="section" id="the-plan">
+<h2>The plan</h2>
+<p>I have access to a laser cutter at uni, so I thought that it will be great to use it for the project.
+Add to that some <a class="reference external" href="https://www.thingiverse.com/thing:1206004">open source designs for laser cutting eurorack cases</a>, and it looked like an easy path to follow.
+But then I started to rethink it too much.
+I already bought the <a class="reference external" href="http://www.tiptopaudio.com/zrails.php">Tiptop audio Z-Rails</a> to fit into the case, which is not exactly the same as the one in the design above,
+In addition, our laser cutter can cut much thicker wood than the 6mm used in this design.
+So maybe I will design my own case...</p>
+<p>I decided to do so, and with the help of <a class="reference external" href="https://makeabox.io/">make a box</a> produced my own design files, for a 9mm plywood.
+And if I'm already using the laser cutter to cut the wood, why not add a stylistic engraved texture on top of it?
+Inspired by <a class="reference external" href="http://archive.eyebeam.org/projects/generative-laser-cuts">Aaron Meyers</a>, I opened processing and started to code a generative texture to engrave over my case.
+I was sure that engraving the texture will be the most complicated part in this DIY project, but I was wrong.
+Very wrong.</p>
+</div>
+<div class="section" id="what-didn-t-work">
+<h2>What didn't work</h2>
+<p>These are the mistakes I made.
+All of them could be avoided easily.</p>
+<ul class="simple">
+<li>Consider the position of the screws that connect the rails to the case. I didn't thought about it, and it ended to be very close to a cut, as you can see in the picture.</li>
+</ul>
+<img alt="Problematic screw positioning." src="/images/eurorack_case_screw.jpg" style="width: 100%;" />
+<ul class="simple">
+<li>Make sure that the laser cutter can actually cut the material you got! And if unsure, try on a small piece of material before starting. I checked with the workshop instruction, and was sure that 9mm will be fine. On the first attempt, when I configured the laser cutter to attempt to cut 9mm, it ran so slowly that the material caught fire (you can see the burned area in the upper left corner in the picture above)! Then, I speed it up, but with higher speed it took around 20 iterations until it was cut properly. Two consequences of the issues I gut with the cuttings are the burned cut, and...</li>
+<li>The cut ended up way wider than I expected. I thought that the laser will cut the material very precisely, and in minimal width, but the cut ended up to be pretty wide (I will say ~2 millimeters).</li>
+<li>Make sure you got the dimensions right! I checked online and saw that modules are 128.5mm high. I added the width of the top edge of the Z-Rails, which is 1.2mm, to each side, and ended up with 131mm as the internal height for the case. THIS IS WRONG! It seems that the correct height should be 133.35mm, but recheck for yourself. I had to use chisel to trim 1mm from the top and the bottom pieces to open some more room for the rails.</li>
+</ul>
+</div>
+<div class="section" id="the-went-well">
+<h2>The went well</h2>
+<p>The engraving ended up much better than I expected.
+I started with one PDF file for the entire engraving job, with an overall length of lines to engrave just over 100 meters.
+When I tried to send this file to the printer the driver's preview window didn't show all of the lines in my PDF.
+Maybe it's just a presentation issue, but I decided to separate the job into layers.
+This was easy for my case, as the lines were generated by <a class="reference external" href="https://processing.org/">processing</a> one by one without any dependencies between them.
+In the original PDF there were 30K lines, so I created 6 PDFs with 5K lines each, that when overlaid create the same result.
+I really glad I did that for few reasons.</p>
+<ul class="simple">
+<li>I didn't know if the printer will move like a regular printer (with one axis moving forwards all the time and the other forwards and backwards repeatedly), or that it will do the lines one by one as they were &quot;recorded&quot; in the pdf (random order), or will optimize the movement. Apparently, it optimizes the movement, meaning that it starts from one corner and draws line by line from there towards the other side of the board. If I had send the whole plan, and the process was too slow, I would have been ended up with only half of the board engraved. Fortunately, each layer took &quot;only&quot; 53 minutes, so it wasn't a real problem.</li>
+<li>Second, with this layered approach I could see the state of the engraving after each layer and decide if I want to continue to the next layer or not. Eventually, I stopped after the 4th layer as the result was good enough for me.</li>
+</ul>
+<img alt="The engraved texture before cutting." src="/images/eurorack_case_engraving.jpg" style="width: 100%;" />
+<p>I also cut some blank panels on the way, from 3mm plywood.
+An easy task for the laser printer.
+In addition, the gluing and finishing (with danish oil) were successful and without any issues.
+But there is nothing interesting I can tell you about these, so let's move on.</p>
+</div>
+<div class="section" id="files-and-disclaimer">
+<h2>Files and disclaimer</h2>
+<p>The design files are <a class="reference external" href="https://github.com/Nagasaki45/eurorack-case">here</a>.
+Feel free to use the engraving sketch in <tt class="docutils literal">generative_waves/generative_waves.pde</tt> for whatever you want.
+As far as I can tell the blank panels files are also fine.
+<strong>BUT PLEASE DON'T USE THE FILES IN THIS REPO TO CUT A EURORACK CASE!</strong></p>
+</div>
+<div class="section" id="to-summarize">
+<h2>To summarize</h2>
+<p>It's not the most accurate build, but my new case does the job.
+Despite the problems, IMHO the end result looks very good.
+And finally I'm starting to play with it, and enjoy every moment!</p>
+<img alt="Jamming with my new eurorack case." src="/images/eurorack_case_jam.jpg" style="width: 100%;" />
+<p>If you want to see more <a class="reference external" href="https://photos.app.goo.gl/dPukY2PL1LhajZlZ2">here is an album of the entire building process</a>.
+Some modular music will come soon.
+Stay tuned!</p>
+</div>
+
+</div>
+		</div>
+	</body>
+</html>
