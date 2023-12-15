@@ -1,6 +1,6 @@
 Deployment tech for the hobbyist, again
 #######################################
-:date: 2023-12-11
+:date: 2023-12-15
 :author: Tom Gurion
 :tags: dokku, docker, web, tools
 :slug: deployment-tech-for-the-hobbyist-again
