@@ -21,7 +21,7 @@ insulting a not-so-good player by choosing him last.
 - Maybe you have too many players around for one game, but just enough
 for a tournament of 4 teams.
 In order to solve these inconveniences I've created
-`Xteams! <http://xteams.nagasaki45.com/>`__ a web-app with one goal in
+`Xteams! <https://xteams.tomgurion.me/>`__ a web-app with one goal in
 mind:
 
 **Create teams automatically based on discrete scores of the players**
