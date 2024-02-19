@@ -135,8 +135,10 @@ An attempt to play with the WebAudio API that ended up more like an experiment i
 .. _Phoenix: https://www.phoenixframework.org/
 .. _my GitHub profile: https://github.com/nagasaki45/
 .. _Gigalixir: https://www.gigalixir.com/
-.. _Cardigan: https://cardigan.tomgurion.me/
+.. _Cardigan: https://cardigan.leverstone.me/
 .. _The Crew: https://boardgamegeek.com/boardgame/284083/crew-quest-planet-nine
 .. _BGA: https://boardgamearena.com/
-.. _Proker: https://proker.tomgurion.me/
-.. _Xteams!: https://xteams.tomgurion.me/
+.. _Proker: https://proker.leverstone.me/
+.. _Xteams!: https://xteams.leverstone.me/
+.. _GrabACoffee: https://grab-a-coffee.leverstone.me/
+.. _web-audio: https://web-audio.leverstone.me/

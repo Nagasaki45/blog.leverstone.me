@@ -12,7 +12,7 @@ Doing audio programming, I've mainly experienced with Max/MSP and Pd
 but my interest in shared music creation / consumption and interactive
 systems have long seems to demand the extension of this skill set; as
 Udi Oron rightly argued in
-"`Hackita <http://blog.tomgurion.me/hackita.html>`__\ "
+"`Hackita </hackita>`__\ "
 two months ago: you have no chance to convince someone to download your
 desktop app (Max or Pd patches for example), give them a web app
 instead!
@@ -41,14 +41,14 @@ usage because of the next reasons:
    <div class="separator" style="clear: both; text-align: center;">
 
 .. image:: /images/web_audio_screenshot.png
-  :target: https://web-audio.tomgurion.me/
+  :target: https://web-audio.leverstone.me/
   :alt: Web-audio experiment screenshot
 
 .. raw:: html
 
    </div>
 
-That's being said, `here <https://web-audio.tomgurion.me/>`__ are my
+That's being said, `here <https://web-audio.leverstone.me/>`__ are my
 experiment with the API. If you are interesting in more information and
 tutorials be sure to take a look at the "Useful links" menu (top
 navigation bar). And as always, source code can be found at

@@ -10,7 +10,7 @@ I have a new site!
 .. image:: /images/portfolio_header.jpg
   :width: 100%
   :alt: My portfolio header
-  :target: http://www.tomgurion.me
+  :target: http://www.leverstone.me
 
 The site was created to present the different projects I'm working on
 as a portfolio. I will keep posting ideas and explorations here. But I
@@ -21,6 +21,6 @@ And for the technical part. This is a static, pelican based site. The
 theme was adapted from the `Hugo Creative
 theme <http://themes.gohugo.io/creative/>`__, with several
 modifications. Feel free to
-`fork <https://github.com/Nagasaki45/tomgurion.me>`__ and change for
+`fork <https://github.com/Nagasaki45/leverstone.me>`__ and change for
 your own needs.
 As usual, comments are more than welcome!

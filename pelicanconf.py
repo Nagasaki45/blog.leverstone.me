@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Tom Gurion'
-SITENAME = 'Tom Gurion'
+AUTHOR = 'Tom Leverstone'
+SITENAME = 'Tom Leverstone'
 SITESUBTITLE = 'Blog'
 BIO = 'A blog about a mixture of hobbies, work, and other interests'
 SITEURL = ''
@@ -24,10 +24,10 @@ AUTHOR_FEED_RSS = None
 
 # Sidebar links
 SOCIAL = (
-    ('home', 'https://tomgurion.me'),
+    ('home', 'https://leverstone.me'),
     ('github', 'https://github.com/Nagasaki45'),
     ('twitter', 'https://twitter.com/nagasaki45'),
-    ('email', 'mailto:nagasaki45@gmail.com'),
+    ('email', 'mailto:tleverstone@gmail.com'),
 )
 
 DEFAULT_PAGINATION = 10

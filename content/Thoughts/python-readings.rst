@@ -11,7 +11,7 @@ programmer) by reading python books.
 A year ago I've started to learn web development from `Udi
 Oron <http://www.10x.org.il/>`__ in
 `Hackita <https://hackita.hasadna.org.il/>`__ (my impressions
-`here <http://blog.tomgurion.me/hackita.html>`__), and
+`here </hackita>`__), and
 shortly after started to work with him as a python teaching assistant in
 his courses. Few months ago I've got a permanent position in one of
 those companies we've taught in and the stigma of someone that can
@@ -128,7 +128,7 @@ Scientific computing with python
 As already noted, I've never thought that I will find myslef
 programming python in a full time job. Essentially, I've decided to
 learn python as a data analysis tool for my `MA
-research <http://www.tomgurion.me/an-audio-only-augmented-reality-system-for-social-interaction.html>`__. These
+research <https://leverstone.me/an-audio-only-augmented-reality-system-for-social-interaction.html>`__. These
 are the main sources I've used to get the necessary knowledge.
 
 `Python for Data Analysis (Wes McKinney) <http://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1449319793>`__

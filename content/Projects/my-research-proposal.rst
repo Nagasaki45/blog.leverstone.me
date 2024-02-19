@@ -5,7 +5,7 @@ My research proposal
 :tags: MA thesis
 :slug: my-research-proposal
 
-.. image:: http://www.tomgurion.me/images/portfolio/ma_thesis.jpg
+.. image:: https://leverstone.me/images/portfolio/ma_thesis.jpg
   :width: 100%
   :alt: Baloon bundles on the dance floor
 

@@ -9,4 +9,4 @@ MusiGali video demonstration
 
 A screen capture of MusiGali `Ableton Live <https://www.ableton.com/>`__
 set. All the details are
-`here <http://www.tomgurion.me/musigali.html>`__.
+`here </musigali-eeg-controlled-music-for-brain-tech-israel-2013>`__.
